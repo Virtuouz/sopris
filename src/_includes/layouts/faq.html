@@ -1,0 +1,22 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = subheadline %}
+
+
+
+{% block content %}
+{% include "partials/page-header.html" %}
+<article class="faq-main-container">
+    <div class="lt-container">
+        
+            {% for faqs, faq in faq %}
+            <div class="faq-faq-content">
+            <h2>{{ faq.headline }}</h2>
+            <p>{{ faq.text }}</p>
+        </div>
+{% endfor %}
+</div>
+</article>
+{% include "partials/contact-form.html" %}
+{% endblock %}

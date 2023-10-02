@@ -1,0 +1,61 @@
+{% set navPages = collections.all | eleventyNavigation %}
+{% macro renderNavListItem(entry) -%}
+   {% if item.text == "Blog" %}
+        {% if collections.blog.length %}
+        <li>
+          <a 
+            href="{{ entry.url }}"
+            {{
+            helpers.getLinkActiveState(entry.url,
+            page.url)}}
+            >{{ entry.title }}</a
+          >
+        </li>
+        {% endif %}
+        {% else %}
+        <li>
+          <a
+            href="{{ entry.url }}"
+            {{
+            helpers.getLinkActiveState(entry.url,
+            page.url)}}
+            >{{ entry.title }}</a
+          >
+        </li>
+        {% endif %} 
+{%- if entry.children.length -%}
+  <ul>
+    {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+  </ul>
+{%- endif -%}
+</li>
+{%- endmacro %}
+
+<a class="visually-hidden" href="#main-content">Skip to content</a>
+<header id="navigation" class="site-nav">
+
+  <div class="container">
+    <div aria-hidden="true" class="background-color-div">
+      <!--This div is used to overcome a z-index issue where the open
+          #navbar-menu is on top of the #navigation. This bar places itself
+          the #navbar-menu so that menu appears behind the #navigation
+      -->
+    </div>
+    
+    {# LOGO #}
+    <a class="logo" href="/" aria-label="{{ site.name}}"
+    >{% include "partials/logo/Vynxlabs.svg" %}</a 
+    >
+    <!--Mobile Nav toggle-->
+    <button class="hamburger-menu" aria-expanded="false" aria-controls="navbar-menu">
+      <span class="visually-hidden">Menu</span>
+      <span aria-hidden="true"></span>
+    </button>
+    <nav id="navbar-menu" aria-label="main navigation">
+
+<ul>
+{%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+</ul>
+    </nav>
+  </div>
+</header>

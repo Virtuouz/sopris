@@ -1,0 +1,65 @@
+{% set navPages = collections.all | eleventyNavigation %}
+{% macro renderNavListItem(entry) -%}
+   {% if item.text == "Blog" %}
+        {% if collections.blog.length %}
+        <li >
+          <a class="nav-item"
+            href="{{ entry.url }}"
+            {{
+            helpers.getLinkActiveState(entry.url,
+            page.url)}}
+            >{{ entry.title }}</a
+          >
+        </li>
+        {% endif %}
+        {% else %}
+        <li c>
+          <a class="nav-item"
+            href="{{ entry.url }}"
+            {{
+            helpers.getLinkActiveState(entry.url,
+            page.url)}}
+            >{{ entry.title }}</a
+          >
+        </li>
+        {% endif %} 
+{%- if entry.children.length -%}
+  <ul>
+    {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+  </ul>
+{%- endif -%}
+</li>
+{%- endmacro %}
+
+<footer class="site-footer-container">
+  {% if homePage %} {% include "partials/background/wavesOpacity.svg" %} {%
+  endif %}
+
+  <div class="site-footer padding-2">
+    <div class="lt-container">
+      <div>
+        <a href="/" aria-label="{{ site.name}}"
+          >{% include "partials/logo/Vynxlabs-alt.svg" %}</a
+        >
+        <p>{{ contactInfo.email }}</p>
+        <p>{{ contactInfo.phone }}</p>
+      </div>
+      <div class="footer-content">
+        <div>
+          <h3 data-type="neutral">Navigation</h3>
+          <ul class="nav-list flow">
+            {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+            <li><a class="nav-item" href="/privacy-policy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div>
+          <h3 data-type="neutral">Looking For A Free DIY Solution?</h3>
+          <p>Try our free starter kit</p>
+          {% include "partials/magnet-button.html" %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="text-center bg-primary-400 margin-0 width-100vw" data-type="neutral">© {{ helpers.getTodaysYear() }}, by {{site.legalName}}</p>
+   <p class="text-center bg-primary-400 margin-0 width-100vw" data-type="neutral">Custom site manually coded by <a href="https://vynxlabs.com/">Vynxlabs</a> </p>
+</footer>

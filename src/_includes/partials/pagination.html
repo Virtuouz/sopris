@@ -1,0 +1,15 @@
+{% if pagination.href.next or pagination.href.previous %}
+<footer>
+  <nav class="pagination-container flex-row flex-jc-sa">
+    {% if pagination.href.previous %}
+    <a class="text-subheadline" href="{{ pagination.href.previous }}{{ paginationNumber }}"
+      >{{ paginationPrevText if paginationPrevText else 'Previous'}}</a
+    >
+    {% endif %} {% if pagination.href.next %}
+    <a class="text-subheadline" href="{{ pagination.href.next }}{{ paginationAnchor }}">
+      {{ paginationNextText if paginationNextText else 'Next' }}
+    </a>
+    {% endif %}
+  </nav>
+</footer>
+{% endif %}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+  <g>
+    <path d="M512 46v105l-30 30H30L0 151V46c0-8.401 6.599-15 15-15h482c8.401 0 15 6.599 15 15z" style="" fill="#5fb6e0" data-original="#76e2f8" class=""/>
+    <path d="M512 46v105l-30 30H256V31h241c8.401 0 15 6.599 15 15z" style="" fill="#78c1e5" data-original="#25d9f8" class=""/>
+    <path d="M512 151v315c0 8.401-6.599 15-15 15H15c-8.401 0-15-6.599-15-15V151h512z" style="" fill="#ececf1" data-original="#ececf1" class=""/>
+    <path d="M512 151v315c0 8.401-6.599 15-15 15H256V151h256z" style="" fill="#e2e2e7" data-original="#e2e2e7" class=""/>
+    <path d="m155.395 416.605-60-60c-5.859-5.859-5.859-15.352 0-21.211l60-60c5.859-5.859 15.352-5.859 21.211 0s5.859 15.352 0 21.211L127.211 346l49.395 49.395c14.22 14.22-7.376 35.046-21.211 21.21zM299.5 292.599l-60 120c-3.9 7.5-12.599 10.501-20.099 6.901-7.5-3.9-10.501-12.9-6.901-20.099l60-120c3.9-7.5 12.9-10.501 20.099-6.901 7.5 3.9 10.501 12.899 6.901 20.099z" style="" fill="#ff7816" data-original="#ff7816" class=""/>
+    <path d="M335.395 416.605c-5.859-5.859-5.859-15.352 0-21.211L384.789 346l-49.395-49.395c-5.859-5.859-5.859-15.352 0-21.211s15.352-5.859 21.211 0l60 60c5.859 5.859 5.859 15.352 0 21.211l-60 60c-5.859 5.86-15.351 5.86-21.21 0z" style="" fill="#ff4b00" data-original="#ff4b00" class=""/>
+    <path d="M226 121H76c-8.291 0-15-6.709-15-15s6.709-15 15-15h150c8.291 0 15 6.709 15 15s-6.709 15-15 15z" style="" fill="#5a5a5a" data-original="#5a5a5a" class=""/>
+    <path d="M299.5 292.599 256 379.6v-67.2l16.5-32.999c3.9-7.5 12.9-10.501 20.099-6.901 7.5 3.9 10.501 12.899 6.901 20.099z" style="" fill="#ff4b00" data-original="#ff4b00" class=""/>
+    <circle cx="316" cy="106" r="15" style="" fill="#ff4b00" data-original="#ff4b00" class=""/>
+    <circle cx="376" cy="106" r="15" style="" fill="#ff4b00" data-original="#ff4b00" class=""/>
+    <circle cx="436" cy="106" r="15" style="" fill="#ff4b00" data-original="#ff4b00" class=""/>
+    <path d="M451 226c0 8.401-6.599 15-15 15H76c-8.401 0-15-6.599-15-15s6.599-15 15-15h360c8.401 0 15 6.599 15 15z" style="" fill="#ff7816" data-original="#ff7816" class=""/>
+    <path d="M451 226c0 8.401-6.599 15-15 15H256v-30h180c8.401 0 15 6.599 15 15z" style="" fill="#ff4b00" data-original="#ff4b00" class=""/>
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+Sitemap: https://vynxlabs.com/sitemap.xml
+
+User-agent: *
+Disallow: /admin/
+Allow: /

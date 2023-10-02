@@ -1,0 +1,15 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = subheadline %}
+
+
+
+{% block content %}
+{% include "partials/page-header.html" %}
+<article class="flex-col flex-ai-center">
+    <h1>{{ ctaHeadline }}</h1>
+    {% include "partials/cta-button.html" %}
+</article>
+{% include "partials/contact-form.html" %}
+{% endblock %}

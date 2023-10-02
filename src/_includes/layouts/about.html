@@ -1,0 +1,45 @@
+{% extends "layouts/base.html" %} {% block content %} {% set pageHeaderTitle =
+title %} {% set pageHeaderSummary = subheadline %} {% include
+"partials/page-header.html" %}
+
+<article class="about-main-container">
+  <div class="lt-container">
+    {# {% image picSelf, "", "(max-width: 200px) 200px, (max-width: 400px)
+    200px, (max-width: 850px) 400px, (max-width: 1920px) 850px, (max-width:
+    2500px) 1920px"%} #} {#
+    <div class="about-content">
+      <h2>{{ belief.headline }}</h2>
+      <p>{{ content | safe }}</p>
+    </div>
+    #}
+    <div class="about-me-container">
+      <picture class="pos-relative">
+        <h1 data-type="neutral">Giovanni Plascencia</h1>
+        <source
+          media="(max-width: 450px)"
+          srcset="/images/people/GP-crop-300.jpg"
+        />
+        <source
+          media="(max-width: 1099px)"
+          srcset="/images/people/GP-crop-400.jpg"
+        />
+        <source
+          media="(min-width: 1100px)"
+          srcset="/images/people/GP-400.jpg"
+        />
+        <img class="radius-2" src="/images/people/GP-400.jpg" alt="" />
+      </picture>
+      <div class="about-me-content bg-neutral-100">
+        <div class="about-me-text">
+          {# <h2>{{ belief.headline }}</h2> #}
+          <p>{{ content | safe }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="flex-col flex-ai-center">
+  <h1>{{ ctaHeadline }}</h1>
+  {% include "partials/cta-button.html" %}
+</article>
+{% include "partials/contact-form.html" %} {% endblock %}

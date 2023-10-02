@@ -1,0 +1,47 @@
+<article class="form-container">
+  <div class="lt-container">
+    <form name="contact" method="POST" class="form-content" data-netlify="true" data-netlify-recaptcha="true">
+        <div>
+          <h2>Prefer Email?</h2>
+          <p class="form-input">
+            <label class="flex-col" for="">Name<input type="text" required name="name" /><span></span></label>
+          </p>
+          <p class="form-input">
+            <label class="flex-col" for="">Business<input type="text" name="business"/></label>
+          </p>
+          <p class="form-input">
+            <label class="flex-col" for="">Email<input type="email" name="email" required /><span></span></label>
+          </p>
+          <p class="form-input">
+            <label class="flex-col" for="">Phone<input type="tel"  name="phone"/></label>
+          </p>
+          <p class="form-input">
+            <label class="flex-col" for=""
+              >Message<textarea
+                cols="30"
+                rows="10"
+                name="message"
+                required
+              ></textarea
+              ><span></span
+            ></label>
+          </p>
+        </p>
+        <div data-netlify-recaptcha="true"></div>
+        <p>
+          <button type="submit" class="button">Send</button>
+        </div>
+    </form>
+
+    <div class="form-info">
+      <div class="flex-row">
+        {% include "partials/icons/025-arroba.svg" %}
+        <p>{{ contactInfo.email }}</p>
+      </div>
+      <div class="flex-row">
+        {% include "partials/icons/029-telephone-1.svg" %}
+        <p>{{ contactInfo.phone }}</p>
+      </div>
+    </div>
+  </div>
+</article>

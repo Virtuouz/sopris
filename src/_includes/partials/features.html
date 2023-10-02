@@ -1,0 +1,11 @@
+<div class="flex-row flex-wrap flex-jc-sa">
+  {% for item in features.items %}
+  <ul class="feature-set flow">
+    {% for feature in item.featureSet %}
+    <li class="feature-item">
+      <strong>{{ feature.name }}</strong> {{ feature.desc }}
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</div>

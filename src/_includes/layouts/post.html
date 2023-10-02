@@ -1,0 +1,54 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} 
+
+{# Render post date and any tags that this post has been filed under #} 
+{% set pageHeaderSummary %} 
+
+{# Grab other posts that aren’t this one for the 'more from the blog' feed #} 
+{% set recommendedPosts = helpers.getSiblingContent(collections.blog, page) %}
+
+<time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+{% if tags %}
+<p class="visually-hidden" id="tags-desc">
+  Tags that this post has been filed under.
+</p>
+<ul class="tags-list" aria-describedby="tags-desc">
+  {% for tag in tags %}
+  <li>
+    <a href="/tag/{{ tag | slug }}/" {% if backgroundImg %} data-type="neutral" {% endif %}>#{{ tag | title | replace(' ', '') }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %} {% endset %} {% block content %}
+<div class="post-container">
+  {% include "partials/page-header.html" %}
+  <article class="post-main-container">
+    <div class="lt-container">{% if content | toc %}
+      <section class="accordion-section">
+        <div class="accordion-container">
+          <div class="accordion">
+            <div class="accordion-item" id="TOC">
+              <a class="accordion-link toggle-open" href="#TOC">Table of Contents</a>
+              <a class="accordion-link toggle-close" href="#">Table of Contents</a>
+              <div class="answer">
+                {{ content | toc | safe }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  {% endif %}
+  <div>{{ content | safe}} 
+    <p>
+    If you need help transforming your small business website, give us a call. We specialize in small business websites for service businesses.
+  </p>
+  {% include "partials/cta-button.html" %}</div>
+  </div>
+  </article>
+  {% if recommendedPosts.length %}
+    <footer class="recommended-posts">
+      {% set postListItems = recommendedPosts %} {% set postListHeadline = 'More
+      from the blog' %} {% include "partials/post-list.html" %}
+    </footer>
+    {% endif %}
+</div>
+{% endblock %}
