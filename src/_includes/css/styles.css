@@ -1,5 +1,5 @@
 
-{% cssBackground "src/images/background/space.jpg", ".hp-feature-wild-container", [600, 800, 900, 1100, 1500, 2000] %}
+/* {% cssBackground "src/images/background/space.jpg", ".hp-feature-wild-container", [600, 800, 900, 1100, 1500, 2000] %} */
 
 {% if backgroundImg %}
 .page-header{

@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true
 eleventyNavigation:
   key: About
   order: 4

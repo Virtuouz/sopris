@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,21 +10,22 @@
       type="application/rss+xml"
       href="{{ site.url }}/feed.xml"
     />
-    {% set css %}
-    {% include "css/styles.css" %}
-    {% endset %}
-    
-    <link rel="stylesheet" href="/css/reset.css">
+    {% set css %} {% include "css/styles.css" %} {% endset %}
+
+    <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <style defer> {{ css | safe }} </style>
+    <link rel="stylesheet" href="/css/output.css" />
+    <style defer>
+      {{ css | safe }}
+    </style>
   </head>
   <body class="flex-col">
-    {% include "partials/site-head.html" %}
+    {# {% include "partials/site-head.html" %} #}
 
     <main tabindex="-1" id="main-content" class="site-content flow">
       {% block content %}{% endblock %}
     </main>
-    {% include "partials/site-foot.html" %}
+    {# {% include "partials/site-foot.html" %} #}
     <script defer>
       //
       //    Toggle Mobile Navigation

@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true
 eleventyNavigation:
   key: Faq
   order: 2

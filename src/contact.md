@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true
 eleventyNavigation:
     key: Contact
     order: 5

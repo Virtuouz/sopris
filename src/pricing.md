@@ -1,4 +1,5 @@
 ---
+eleventyExcludeFromCollections: true
 eleventyNavigation:
     key: Pricing
     order: 3
