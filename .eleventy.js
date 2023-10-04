@@ -10,19 +10,21 @@ const pluginTOC = require('eleventy-plugin-toc')
 
 const imageShortcode = async (
   src,
+  cls,
   alt,
   sizes,
-  widths = [200, 400, 850, 1920, 2500],
+  widths = [200, 400, 850, 1920, 2500, null],
   formats = ["webp", "jpeg"]
 ) => {
   const imageMetadata = await Image(src, {
-    widths: [...widths, null],
+    widths: [...widths],
     formats: [...formats, null],
     outputDir: "dist/assets/images",
     urlPath: "/assets/images",
   });
 
   const imageAttributes = {
+    class: cls,
     alt,
     sizes,
     loading: "lazy",
