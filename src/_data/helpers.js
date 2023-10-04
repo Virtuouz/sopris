@@ -61,5 +61,6 @@ module.exports = {
   },
   getTodaysYear(){
     return new Date().getFullYear();
-  }
+  },
+  
 };
