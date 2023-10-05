@@ -87,9 +87,14 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(rssPlugin);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(pluginTOC,{tags:['h1','h2','h3']})
+
   // Returns a collection of blog posts in reverse date order
   eleventyConfig.addCollection("blog", (collection) => {
     return [...collection.getFilteredByGlob("./src/posts/*.md")].reverse();
+  });
+
+  eleventyConfig.addCollection("specials", (collection) => {
+    return collection.getFilteredByGlob("./src/specials/*.md");
   });
 
   eleventyConfig.addFilter("dateFilter", dateFilter);

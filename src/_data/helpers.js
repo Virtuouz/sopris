@@ -63,4 +63,9 @@ module.exports = {
     return new Date().getFullYear();
   },
   
+  getToday(){
+    const DAY = new Date();
+    return DAY.getDay();
+  },
+  
 };
