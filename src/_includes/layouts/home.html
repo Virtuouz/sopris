@@ -8,12 +8,12 @@
   {% include "partials/cta-button.html" %}
 </article>
 
-<article>
+<article >
   <h2>{{ menu.headline }}</h2>
   <p>{{ menu.subheadline }}</p>
-  <div>
+  <div class="meals">
     {% for sections, section in menu.menusections %}
-    <div>
+    <div _="on click remove .text-9xl from me">
       <h3 class="max-w">{{ section.headline }}</h3>
       {% image section.img, "max-w-xs","","(max-width: 200px) 200px, (max-width:
       400px) 400px, (max-width: 850px) 850px, (max-width: 1920px) 1920px,
@@ -28,9 +28,9 @@
 <article>
   {% for special in specialsList %}
   {% if special.data.day == helpers.getToday() %}
-  <h2>{{ special.data.title }}</h2>
+  <h2 id="special">{{ special.data.title }}</h2>
   <p>{{ special.data.summary }}</p>
-  <a href="">See All Weekly Specials</a>
+  <a href="#special" _="on click add .text-9xl to .meals">See All Weekly Specials</a>
   {% endif %}
   {%endfor%}
 </article>
