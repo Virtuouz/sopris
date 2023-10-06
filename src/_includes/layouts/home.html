@@ -1,11 +1,8 @@
 {% extends "layouts/base.html" %} {% block content %} {% set specialsList =
-collections.specials %} 
-{% set nextEvent =
-helpers.getNextEvent(collections.events) %} 
-{% set nextEvents =
-helpers.getNextEvents(collections.events) %}
-{% set dateInfo =
-  helpers.getDateInfo(nextEvent.data.date) %}
+collections.specials %} {% set nextEvent =
+helpers.getNextEvent(collections.events) %} {% set nextEvents =
+helpers.getNextEvents(collections.events) %} {% set dateInfo =
+helpers.getDateInfo(nextEvent.data.date) %}
 
 <article>
   <h1>{{ hero.headline }}<br /><span>{{ hero.restaurant }}</span></h1>
@@ -66,9 +63,12 @@ helpers.getNextEvents(collections.events) %}
 <article>
   <h1>Upcoming Event</h1>
   {% for day, hours, minutes, month, dayNum in dateInfo %}
-  <p class="uppercase font-bold text-lime-600">{{nextEvent.data.category}} – {{ day }} {{ hours }}:{{ minutes }} – {{ month }} {{ dayNum }}</p>
+  <p class="font-bold uppercase text-lime-600">
+    {{nextEvent.data.category}} – {{ day }} {{ hours }}:{{ minutes }} – {{ month
+    }} {{ dayNum }}
+  </p>
   {% endfor %}
-  <h2>{{ nextEvent.data.title }}</h1>
+  <h2>{{ nextEvent.data.title }}</h2>
   <p>{{ nextEvent.data.summary }}</p>
   <a href="">Learn More</a>
   {# {% for event in nextEvents %}
