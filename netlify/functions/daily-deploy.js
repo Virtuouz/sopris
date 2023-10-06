@@ -3,7 +3,7 @@ import { schedule } from '@netlify/functions'
 
 const BUILD_HOOK = 'https://api.netlify.com/build_hooks/651e403439f6323aa4d80fb9'
 
-const handler = schedule('* * * * *', async () => {
+const handler = schedule('0 9 * * *', async () => {
     await fetch (BUILD_HOOK, {
       method: 'POST'
     }).then(response => {
