@@ -1,6 +1,11 @@
-{% extends "layouts/base.html" %} {% block content %}
-
-{% set specialsList = collections.specials %}
+{% extends "layouts/base.html" %} {% block content %} {% set specialsList =
+collections.specials %} 
+{% set nextEvent =
+helpers.getNextEvent(collections.events) %} 
+{% set nextEvents =
+helpers.getNextEvents(collections.events) %}
+{% set dateInfo =
+  helpers.getDateInfo(nextEvent.data.date) %}
 
 <article>
   <h1>{{ hero.headline }}<br /><span>{{ hero.restaurant }}</span></h1>
@@ -8,15 +13,17 @@
   {% include "partials/cta-button.html" %}
 </article>
 
-<article >
+<article>
   <h2>{{ menu.headline }}</h2>
   <p>{{ menu.subheadline }}</p>
   <div>
     {% for sections, section in menu.menusections %}
-    <div class="meals" 
-    _="
+    <div
+      class="meals"
+      _="
     on click remove .bg-sky-500 from .meals
-    on click add .bg-sky-500 to me">
+    on click add .bg-sky-500 to me"
+    >
       <h3 class="max-w">{{ section.headline }}</h3>
       {% image section.img, "max-w-xs","","(max-width: 200px) 200px, (max-width:
       400px) 400px, (max-width: 850px) 850px, (max-width: 1920px) 1920px,
@@ -29,13 +36,14 @@
 </article>
 
 <article>
-  {% for special in specialsList %}
-  {% if special.data.day == helpers.getToday() %}
+  {% for special in specialsList %} {% if special.data.day == helpers.getToday()
+  %}
   <h2 id="special">{{ special.data.title }}</h2>
   <p>{{ special.data.summary }}</p>
-  <a href="#special" _="on click add .bg-sky-500 to .meals">See All Weekly Specials</a>
-  {% endif %}
-  {%endfor%}
+  <a href="#special" _="on click add .bg-sky-500 to .meals"
+    >See All Weekly Specials</a
+  >
+  {% endif %} {%endfor%}
 </article>
 
 <article>
@@ -53,6 +61,21 @@
   </div>
   {% endfor %}
 </article>
+
+{% if nextEvent %}
+<article>
+  <h1>Upcoming Event</h1>
+  {% for day, hours, minutes, month, dayNum in dateInfo %}
+  <p class="uppercase font-bold text-lime-600">{{nextEvent.data.category}} – {{ day }} {{ hours }}:{{ minutes }} – {{ month }} {{ dayNum }}</p>
+  {% endfor %}
+  <h2>{{ nextEvent.data.title }}</h1>
+  <p>{{ nextEvent.data.summary }}</p>
+  <a href="">Learn More</a>
+  {# {% for event in nextEvents %}
+  <h1>{{ event.data.title }}</h1>
+  {% endfor %} #}
+</article>
+{% endif %}
 
 <article>
   <h2>{{ about.headline }}</h2>

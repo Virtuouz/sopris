@@ -97,6 +97,10 @@ module.exports = (eleventyConfig) => {
     return collection.getFilteredByGlob("./src/specials/*.md");
   });
 
+  eleventyConfig.addCollection("events", (collection) => {
+    return collection.getFilteredByGlob("./src/events/*.md");
+  });
+
   eleventyConfig.addFilter("dateFilter", dateFilter);
   eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
 
