@@ -16,11 +16,12 @@ if $isFocused is 0 add .text-lime-600 to first <button/>">
             {% for category in categories %}
             <li><button id="{{category}}" class="menu-categories font-bold" _="
                 
+                
                 on focus remove .text-lime-600 from .menu-categories
-                on focus add .text-lime-600 to me
-                on focus add .hidden to .categories
-                on focus remove .hidden from .{{category}} 
-                on focus set  $isFocused to 1 log $isFocused"
+                add .text-lime-600 to me
+                add .hidden to .categories
+                remove .hidden from .{{category}} 
+                set  $isFocused to 1 log $isFocused"
                 >{{ category }}</button></li>
             {% endfor %}
         </ul>
@@ -45,6 +46,7 @@ if $isFocused is 0 add .text-lime-600 to first <button/>">
 
 </article>
 <script defer type="text/hyperscript">
+    {# After page load check t  #}
     on load if $isFocused is not 1 set  $isFocused to 0 send loaded to .waiting
 </script>
     
