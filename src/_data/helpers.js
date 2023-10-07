@@ -98,23 +98,25 @@ module.exports = {
         DAY.getDate(),
       ],
     ];
-    console.log(dateInfo);
+    //console.log(dateInfo);
     return dateInfo;
   },
   getTruncatedFaqSet(faq) {
-    console.log(faq[0]);
+    //console.log(faq[0]);
     return faq[0];
   },
   getMenuCategories(collection) {
-    console.log(collection)
-    let counter = collection.length;
+    //console.log(collection)
     const CATEGORIES = new Array();
     for (counter in collection) {
-      console.log("-----------------------------------------------");
-      console.log(collection[counter].data.category);
+      //console.log("-----------------------------------------------");
+      //console.log(collection[counter].data.category);
       CATEGORIES.push(collection[counter].data.category)
       counter--;
     }
     return [...new Set(CATEGORIES)];
   },
+  getSpecialDays(collection){
+
+  }
 };

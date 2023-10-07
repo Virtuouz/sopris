@@ -337,6 +337,12 @@ body iframe {
   margin-top: calc(var(--nav-margin) - 1.5rem);
 }
 
+.cs-menu-category::after{
+  content: " ";
+  word-spacing: 1em;
+  background-image: url("/images/dash.svg");
+}
+
 /* Exceptions */
 
 /*-- -------------------------- -->
