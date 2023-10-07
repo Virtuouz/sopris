@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "faqSet": [
+        {
+          "name": "Can I place a takeout or delivery order from Sopris?",
+          "desc": "Absolutely! Give us a call at 775-755-9003 to place your order."
+        },
+        {
+          "name": "What cuisines does Sopris offer?",
+          "desc": "Sopris proudly serves a diverse menu featuring both Mexican and American dishes, providing a range of options for our guests"
+        },
+        {
+          "name": "What payment methods does Sopris accept?",
+          "desc": "We accept major credit cards, debit cards, and cash for payment."
+        },
+        {
+          "name": "Does Sopris offer vegetarian or vegan options?",
+          "desc": "Unfortunately we don't currenlty have vegetarian or vegan options. Send us a message below with suggestions of what you would like to see on the menu"
+        }
+      ]
+    },
+    {
+      "faqSet": [
+        {
+          "name": "What are the operating hours of Sopris?",
+          "desc": "Daily 8am - 10pm"
+        },
+        {
+          "name": "Do I need to make a reservation?",
+          "desc": "No reservation needed! Stop by, take a seat, and we'll take your order."
+        }
+      ]
+    }
+  ]
+}

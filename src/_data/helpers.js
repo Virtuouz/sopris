@@ -80,20 +80,9 @@ module.exports = {
     let dateInfo = [[weekday[DAY.getDay()],DAY.getHours(),minutes,month[DAY.getDay()],DAY.getDate()]]
     console.log(dateInfo)
     return dateInfo;
-  },
-  getWeekDay(date){
-    const DAY = new Date(date)
-    const weekday = ["Sun","Mon","Tue","Wed","Thur","Fri","Sat"];
-    return weekday[DAY.getDay()];
-  },
-  getMonth(date){
-    const DAY = new Date(date)
-    const month = ["Jan.","Feb.","March","April","May","June","July","Aug.","Sept.","Oct.","Nov.","Dec."];
-    return month[DAY.getDay()];
-  },
-  getDayNum(date){
-    const DAY = new Date(date)
-    return DAY.getDate()
+  },getTruncatedFaqSet(faq){
+    console.log(faq[0])
+    return faq[0];
   }
   
 };

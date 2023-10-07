@@ -2,7 +2,8 @@
 collections.specials %} {% set nextEvent =
 helpers.getNextEvent(collections.events) %} {% set nextEvents =
 helpers.getNextEvents(collections.events) %} {% set dateInfo =
-helpers.getDateInfo(nextEvent.data.date) %}
+helpers.getDateInfo(nextEvent.data.date) %} {% set faqSet =
+helpers.getTruncatedFaqSet(faq.items) %}
 
 <article>
   <h1>{{ hero.headline }}<br /><span>{{ hero.restaurant }}</span></h1>
@@ -81,6 +82,24 @@ helpers.getDateInfo(nextEvent.data.date) %}
   <h2>{{ about.headline }}</h2>
   <div>{{content | safe}}</div>
   <h1>{{ helpers.getToday() }}</h1>
+</article>
+
+<article>
+  <ul>
+    {% for question in faqSet.faqSet %}
+    <li>
+      <h2>{{ question.name }}</h2>
+      <p>{{ question.desc }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</article>
+
+<article>
+  <p>{{ specialsList.tags }}</p>
+  {% for tag in specialsList.data.tags %}
+  <p>{{ tag }}</p>
+  {% endfor %}
 </article>
 
 {#
