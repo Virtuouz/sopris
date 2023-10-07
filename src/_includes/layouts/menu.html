@@ -7,10 +7,10 @@
 {% set categories = helpers.getMenuCategories(collections.menu) %}
 
 
-<article _="
-on load set isFocused to 0 
-wait 1s 
-if isFocused is 0 add .text-lime-600 to first <button/>">
+<article class="waiting" _="
+on loaded 
+log $isFocused
+if $isFocused is 0 add .text-lime-600 to first <button/>">
     {% if categories %}
         <ul class="flex gap-4 justify-around" >
             {% for category in categories %}
@@ -20,12 +20,12 @@ if isFocused is 0 add .text-lime-600 to first <button/>">
                 on focus add .text-lime-600 to me
                 on focus add .hidden to .categories
                 on focus remove .hidden from .{{category}} 
-                on focus set isFocused to 1"
+                on focus set  $isFocused to 1 log $isFocused"
                 >{{ category }}</button></li>
             {% endfor %}
         </ul>
-        <div _="
-        on load wait 1s if isFocused is 0 remove .hidden from next <ul/>"></div>
+        <div class="waiting" _="
+        on loaded if $isFocused is 0 remove .hidden from next <ul/>"></div>
         {% for category in categories %}
         <ul class="categories {{category}} hidden" >
             
@@ -44,12 +44,8 @@ if isFocused is 0 add .text-lime-600 to first <button/>">
 
 
 </article>
-    <script>
-        $(document).ready(function() {
-  $("#tabs").tabs({
-    active: 0
-  });
-});
-    </script>
+<script defer type="text/hyperscript">
+    on load if $isFocused is not 1 set  $isFocused to 0 send loaded to .waiting
+</script>
     
 {% endblock %}
