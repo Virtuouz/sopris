@@ -108,12 +108,13 @@ module.exports = {
   getMenuCategories(collection) {
     console.log(collection)
     let counter = collection.length;
-
-    while (counter > 0) {
+    const CATEGORIES = new Array();
+    for (counter in collection) {
       console.log("-----------------------------------------------");
-      console.log(collection[counter]);
+      console.log(collection[counter].data.category);
+      CATEGORIES.push(collection[counter].data.category)
       counter--;
     }
-    return 1;
+    return [...new Set(CATEGORIES)];
   },
 };

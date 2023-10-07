@@ -5,6 +5,51 @@
 {% set pageHeaderSummary = subheadline %} {% include
     "partials/page-header.html" %}
 {% set categories = helpers.getMenuCategories(collections.menu) %}
-    
+
+
+<article _="
+on load set isFocused to 0 
+wait 1s 
+if isFocused is 0 add .text-lime-600 to first <button/>">
+    {% if categories %}
+        <ul class="flex gap-4 justify-around" >
+            {% for category in categories %}
+            <li><button id="{{category}}" class="menu-categories font-bold" _="
+                
+                on focus remove .text-lime-600 from .menu-categories
+                on focus add .text-lime-600 to me
+                on focus add .hidden to .categories
+                on focus remove .hidden from .{{category}} 
+                on focus set isFocused to 1"
+                >{{ category }}</button></li>
+            {% endfor %}
+        </ul>
+        <div _="
+        on load wait 1s if isFocused is 0 remove .hidden from next <ul/>"></div>
+        {% for category in categories %}
+        <ul class="categories {{category}} hidden" >
+            
+                {% for menuItem in collections.menu %}
+                    {% if menuItem.data.category == category%}
+                       <li>
+                        <h4>{{ menuItem.data.title }}</h4>
+                        <p>{{ menuItem.data.price }}</p>
+                        <p>{{ menuItem.data.desc }}</p>
+                       </li>
+                    {% endif %}
+                {% endfor %}
+        </ul>
+        {% endfor %}
+    {% endif %}
+
+
+</article>
+    <script>
+        $(document).ready(function() {
+  $("#tabs").tabs({
+    active: 0
+  });
+});
+    </script>
     
 {% endblock %}

@@ -1,5 +1,5 @@
 ---
-title: "Beef Fajitas"
+title: "test dinner"
 price: "$16.00"
 category: "Dinner"
 img: ""

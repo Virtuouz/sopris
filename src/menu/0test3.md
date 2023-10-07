@@ -1,5 +1,5 @@
 ---
-title: "Beef Fajitas"
+title: "Appetizer test"
 price: "$16.00"
 category: "Appetizers"
 img: ""
