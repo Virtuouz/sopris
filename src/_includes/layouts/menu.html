@@ -4,6 +4,7 @@
     title %} 
 {% set pageHeaderSummary = subheadline %} {% include
     "partials/page-header.html" %}
+{% set categories = helpers.getMenuCategories(collections.menu) %}
     
     
 {% endblock %}

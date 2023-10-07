@@ -14,10 +14,8 @@ module.exports = {
       response = ' aria-current="page"';
     }
 
-
-
     if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0) {
-      response += ' data-state=active';
+      response += " data-state=active";
     }
 
     return response;
@@ -59,30 +57,63 @@ module.exports = {
 
     return filteredItems;
   },
-  getTodaysYear(){
+  getTodaysYear() {
     return new Date().getFullYear();
   },
-  getToday(){
+  getToday() {
     const DAY = new Date();
     return DAY.getDay();
   },
-  getNextEvent(collection){
-    return collection[0]
+  getNextEvent(collection) {
+    return collection[0];
   },
-  getNextEvents(collection, limit =4 ){
-    return collection.slice(1,limit);
+  getNextEvents(collection, limit = 4) {
+    return collection.slice(1, limit);
   },
-  getDateInfo(date){
-    const DAY = new Date(date)
-    const weekday = ["Sun.","Mon.","Tue.","Wed.","Thur.","Fri.","Sat."];
-    const month = ["Jan.","Feb.","March","April","May","June","July","Aug.","Sept.","Oct.","Nov.","Dec."];
-    let minutes = DAY.getMinutes() < 10 ? "0"+DAY.getMinutes() : DAY.getMinutes();
-    let dateInfo = [[weekday[DAY.getDay()],DAY.getHours(),minutes,month[DAY.getDay()],DAY.getDate()]]
-    console.log(dateInfo)
+  getDateInfo(date) {
+    const DAY = new Date(date);
+    const weekday = ["Sun.", "Mon.", "Tue.", "Wed.", "Thur.", "Fri.", "Sat."];
+    const month = [
+      "Jan.",
+      "Feb.",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "Aug.",
+      "Sept.",
+      "Oct.",
+      "Nov.",
+      "Dec.",
+    ];
+    let minutes =
+      DAY.getMinutes() < 10 ? "0" + DAY.getMinutes() : DAY.getMinutes();
+    let dateInfo = [
+      [
+        weekday[DAY.getDay()],
+        DAY.getHours(),
+        minutes,
+        month[DAY.getDay()],
+        DAY.getDate(),
+      ],
+    ];
+    console.log(dateInfo);
     return dateInfo;
-  },getTruncatedFaqSet(faq){
-    console.log(faq[0])
+  },
+  getTruncatedFaqSet(faq) {
+    console.log(faq[0]);
     return faq[0];
-  }
-  
+  },
+  getMenuCategories(collection) {
+    console.log(collection)
+    let counter = collection.length;
+
+    while (counter > 0) {
+      console.log("-----------------------------------------------");
+      console.log(collection[counter]);
+      counter--;
+    }
+    return 1;
+  },
 };
