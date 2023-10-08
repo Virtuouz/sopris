@@ -65,7 +65,14 @@ module.exports = {
     return DAY.getDay();
   },
   getNextEvent(collection) {
-    return collection[0];
+    const DAY = new Date();
+    for(counter in collection){
+      const EVENTDAY = new Date(collection[counter].data.date)
+      if( EVENTDAY < DAY){
+        return collection[counter]
+      }
+    }
+    return null;
   },
   getNextEvents(collection, limit = 4) {
     return collection.slice(1, limit);
