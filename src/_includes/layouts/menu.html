@@ -2,6 +2,7 @@
 title %} {% set pageHeaderSummary = subheadline %} {% include
 "partials/page-header.html" %} {% set categories =
 helpers.getMenuCategories(collections.menu) %}
+{% set SpecialDays = helpers.getSpecialDays(collections.specials) %}
 
 <article
   class="waiting"
@@ -18,21 +19,22 @@ if $isFocused is 0 add .text-lime-600 to first <button/>"
         <li
           class="cs-menu-category menu-categories relative mx-0 my-[.25em] flex-grow basis-[auto] px-6 text-center"
         >
-          <button
-            id="{{category}}"
-            class="menu-categories font-bold"
-            _="
-      
-                        on load if my innerHTML contains '-' call removeDash('{{ category }}') else return {{ category }} end
-                        then put it into my innerHTML  end
-                        on focus remove .text-lime-600 from .menu-categories
-                        add .text-lime-600 to me
-                        add .hidden to .categories
-                        remove .hidden from .{{category}}
-                        set  $isFocused to 1 log $isFocused"
-          >
-            {{ category }}
-          </button>
+          <h3>
+              <button
+                id="{{category}}"
+                class="menu-categories font-bold"
+                _="
+                            on load if my innerHTML contains '-' call removeDash('{{ category }}') else return {{ category }} end
+                            then put it into my innerHTML  end
+                            on focus remove .text-lime-600 from .menu-categories
+                            add .text-lime-600 to me
+                            add .hidden to .categories
+                            remove .hidden from .{{category}}
+                            set  $isFocused to 1 log $isFocused"
+              >
+                {{ category }}
+              </button>
+          </h3>
         </li>
         {# {% if not loop.last %}
         <div class="seperator relative">
