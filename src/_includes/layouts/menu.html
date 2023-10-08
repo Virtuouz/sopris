@@ -17,7 +17,7 @@ if $isFocused is 0 add .text-lime-600 to first <button/>"
       <ul id="categories" class="ml-[-20px] flex flex-wrap justify-between">
         {% for category in categories %}
         <li
-          class="cs-menu-category menu-categories relative mx-0 my-[.25em] flex-grow basis-[auto] px-6 text-center"
+          class="cs-menu-category relative mx-0 my-[.25em] flex-grow basis-[auto] px-6 text-center"
         >
           <h3>
               <button
@@ -36,13 +36,7 @@ if $isFocused is 0 add .text-lime-600 to first <button/>"
               </button>
           </h3>
         </li>
-        {# {% if not loop.last %}
-        <div class="seperator relative">
-          <span class="relative bottom-4 text-5xl">·</span
-          ><span class="relative bottom-5 text-4xl">—</span
-          ><span class="relative bottom-4 text-5xl">·</span>
-        </div>
-        {% endif %}#} {% endfor %}
+        {% endfor %}
       </ul>
     </div>
   </div>
@@ -63,6 +57,60 @@ if $isFocused is 0 add .text-lime-600 to first <button/>"
     {% endif %} {% endfor %}
   </ul>
   {% endfor %} {% endif %}
+
+</article>
+
+<article   _="
+on loaded 
+log $isFocused
+if $isFocused is 0 add .text-lime-600 to the next <button/> within <ul.categoriesSpecial/>"
+>
+  {% if SpecialDays %}
+  <div class="flex justify-center">
+    <div class="relative m-[1em] max-w-3xl overflow-hidden">
+      <ul id="categoriesSpecial" class="ml-[-20px] flex flex-wrap justify-between" 
+      _="
+      ">
+        {% for day, category in SpecialDays %}
+        <li
+          class="cs-menu-category relative mx-0 my-[.25em] flex-grow basis-[auto] px-6 text-center"
+        >
+          <h3>
+              <button
+                id="{{category}}"
+                class="menu-categories-special font-bold"
+                _="
+                            on load if my innerHTML contains '-' call removeDash('{{ category }}') else return {{ category }} end
+                            then put it into my innerHTML  end
+                            on focus remove .text-lime-600 from .menu-categories-special
+                            add .text-lime-600 to me
+                            add .hidden to .categoriesSpecial
+                            remove .hidden from .{{category}}
+                            set  $isFocused to 1 log $isFocused"
+              >
+                {{ category }}
+              </button>
+          </h3>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div
+    class="waiting"
+    _="
+        on loaded if $isFocused is 0 remove .hidden from next <ul/>"
+  ></div>
+  {% for day, category in SpecialDays%}
+  <div class="categoriesSpecial {{category}} hidden">
+    {% for special in collections.specials %} {% if special.data.day ==
+    day%}
+    <h2>{{ special.data.title}}</h2>
+    <p>{{special.content | safe }}</p>
+    {% endif %} {% endfor %}
+  </div>
+  {% endfor %} {% endif %}
+
 </article>
 <script defer type="text/hyperscript">
   {# After page load check t  #}

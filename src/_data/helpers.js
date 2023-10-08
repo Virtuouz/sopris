@@ -118,11 +118,11 @@ module.exports = {
   },
   getSpecialDays(collection){
     const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const SPECIALDAYS= new Object()
+    const SPECIALDAYS= new Array()
     for(counter in collection){
       console.log(collection[counter].data.day);
       let day=collection[counter].data.day;
-      SPECIALDAYS[day]=weekday[day]// weekday[counter]
+      SPECIALDAYS.push([day,weekday[day]])// weekday[counter]
     }
     console.log(SPECIALDAYS)
     return SPECIALDAYS;
