@@ -26,12 +26,13 @@
 }
 
 @font-face {
-  font-family: 'piazzolla';
-  src: url('/fonts/Piazzolla-VariableFont_opsz,wght.woff2') format('woff2 supports variations'),
-  url('/fonts/Piazzolla-VariableFont_opsz,wght.woff2') format('woff2-variations');
+  font-family: "piazzolla";
+  src:
+    url("/fonts/Piazzolla-VariableFont_opsz,wght.woff2")
+      format("woff2 supports variations"),
+    url("/fonts/Piazzolla-VariableFont_opsz,wght.woff2")
+      format("woff2-variations");
   font-weight: 100 1000;
-  
-
 }
 
 /* * {
@@ -57,13 +58,11 @@ h2,
 h3,
 h4 {
   font-family: "piazzolla", sans-serif;
-
 }
 
 html {
   scroll-padding-top: var(--nav-margin); /* height of sticky header */
 }
-
 
 /* Compositions */
 .flow > * + * {
@@ -73,7 +72,6 @@ html {
 .flow5 > * + * {
   margin-top: 5rem;
 }
-
 
 /* Utilities */
 .visually-hidden {
@@ -87,7 +85,6 @@ html {
   width: 1px;
 }
 
-
 /* .text-headline {
   font-size: clamp(2rem, 3vw + 1rem, 3rem);
 }
@@ -95,8 +92,6 @@ html {
 .text-subheadline {
   font-size: clamp(1rem, 1vw + 1rem, 2rem);
 } */
-
-
 
 /* ----------- */
 /* NAVIGATION */
@@ -120,7 +115,6 @@ html {
   border-bottom: 8px var(--clr-accent-200) solid;
   transition: bottom-border 1000ms;
 }
-
 
 /* ------- */
 /* FORM */
@@ -314,7 +308,6 @@ input:invalid + span::after {
   font-size: 3rem;
 }
 
-
 /* Exceptions */
 
 h1[data-type="neutral"],
@@ -337,10 +330,16 @@ body iframe {
   margin-top: calc(var(--nav-margin) - 1.5rem);
 }
 
-.cs-menu-category::after{
+.cs-menu-category::before {
   content: " ";
-  word-spacing: 1em;
-  background-image: url("/images/dash.svg");
+}
+.cs-menu-category::after {
+  position: absolute;
+  content: "·—·";
+  font-family: "piazzolla",sans-serif;
+  font-size: 1.5em;
+  left: -19px;
+  top: -7px
 }
 
 /* Exceptions */
