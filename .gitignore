@@ -8,6 +8,8 @@ Thumbs.db
 .sass-cache
 .env
 .cache
+.Identifier
+.zip
 
 # Node modules and output
 **/node_modules/**

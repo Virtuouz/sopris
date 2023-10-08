@@ -119,10 +119,17 @@ module.exports = {
   getSpecialDays(collection){
     const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const SPECIALDAYS= new Array()
+    const DAYMAP = new Object()
     for(counter in collection){
       console.log(collection[counter].data.day);
       let day=collection[counter].data.day;
-      SPECIALDAYS.push([day,weekday[day]])// weekday[counter]
+      DAYMAP[day]=weekday[day];
+      }
+      for (i=0;i<8;i++){
+        if(DAYMAP[i]){
+          SPECIALDAYS.push([i,DAYMAP[i]])
+        }
+      // weekday[counter]
     }
     console.log(SPECIALDAYS)
     return SPECIALDAYS;
