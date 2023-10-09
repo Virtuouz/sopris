@@ -60,11 +60,9 @@ helpers.getTruncatedFaqSet(faq.items) %}
   {% endfor %}
 </article>
 
-
 <article>
   <h1 class="text-[2.5rem]">Upcoming Event</h1>
-  {% if nextEvent %}
-  {% for day, hours, minutes, month, dayNum in dateInfo %}
+  {% if nextEvent %} {% for day, hours, minutes, month, dayNum in dateInfo %}
   <p class="font-bold uppercase text-lime-600">
     {{nextEvent.data.category}} – {{ day }} {{ hours }}:{{ minutes }} – {{ month
     }} {{ dayNum }}
@@ -75,12 +73,10 @@ helpers.getTruncatedFaqSet(faq.items) %}
   <a href="">Learn More</a>
   {# {% for event in nextEvents %}
   <h1>{{ event.data.title }}</h1>
-  {% endfor %} #}
-  {% else %}
+  {% endfor %} #} {% else %}
   <p class="text-xl">More information coming soon</p>
   {% endif %}
 </article>
-
 
 <article>
   <h2>{{ about.headline }}</h2>
