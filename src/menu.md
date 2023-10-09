@@ -1,5 +1,4 @@
 ---
-eleventyExcludeFromCollections: true
 eleventyNavigation:
     key: Menu
     order: 3

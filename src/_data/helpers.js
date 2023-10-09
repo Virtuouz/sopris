@@ -84,10 +84,10 @@ module.exports = {
       console.log(EVENTDAY, DAY);
       if (EVENTDAY > DAY) {
         console.log(collection[counter].data.title);
-        return collection[counter];
+        EVENTS.push(collection[counter]);
       }
     }
-    return collection.slice(1, limit);
+    return EVENTS.slice(1, limit);
   },
   getDateInfo(date) {
     const DAY = new Date(date);
