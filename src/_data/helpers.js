@@ -64,13 +64,23 @@ module.exports = {
     const DAY = new Date();
     return DAY.getDay();
   },
+  futureEvents(collection){
+    const DAY = new Date();
+    for (counter in collection) {
+      const EVENTDAY = new Date(collection[counter].data.date);
+      
+      if (EVENTDAY > DAY) {
+        return true;
+      }
+    }
+    return false;
+  },
   getNextEvent(collection) {
     const DAY = new Date();
     for (counter in collection) {
       const EVENTDAY = new Date(collection[counter].data.date);
       console.log(EVENTDAY, DAY);
       if (EVENTDAY > DAY) {
-        console.log(collection[counter].data.title);
         return collection[counter];
       }
     }
@@ -81,9 +91,7 @@ module.exports = {
     const EVENTS = new Array();
     for (counter in collection) {
       const EVENTDAY = new Date(collection[counter].data.date);
-      console.log(EVENTDAY, DAY);
       if (EVENTDAY > DAY) {
-        console.log(collection[counter].data.title);
         EVENTS.push(collection[counter]);
       }
     }
@@ -166,10 +174,5 @@ module.exports = {
     console.log(SPECIALDAYS);
     return SPECIALDAYS;
   },
-  log(collection){
-    for(counter in collection){
-      console.log(collection[counter])
-    }
-    return "done"
-  }
+
 };

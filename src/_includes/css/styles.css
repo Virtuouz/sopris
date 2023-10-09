@@ -31,7 +31,7 @@
   opacity: 0.6;
 }
 
-@media (max-width:700px){
+@media (max-width:1024px){
   .page-header{
     background-attachment: scroll;
   }

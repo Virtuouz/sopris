@@ -2,7 +2,7 @@
 title: "Eagles vs. Buccaneers Square Game 4"
 summary: "Experience Football Fever Like Never Before! At Sopris' Eagles vs. Buccaneers Square Game, you're not just watching the game – you're an active participant with a shot at winning big. Join us for an afternoon of football, fun, and the chance to turn your predictions into cash prizes!"
 category: "Golf"
-date: "2022-10-22T05:00"
+date: "2023-10-22T05:00"
 img: ""
 ---
 # How it Works
