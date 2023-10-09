@@ -6,6 +6,7 @@
     helpers.getNextEvents(collections.events) %}
 {% set dateInfo =
 helpers.getDateInfo(nextEvent.data.date) %}
+{% if nextEvent %}
 {% set pageHeaderTitle =
     nextEvent.data.title %} 
 {% set pageHeaderSummary %}
@@ -14,15 +15,28 @@ helpers.getDateInfo(nextEvent.data.date) %}
     }} {{ dayNum }}
     {% endfor %}
 {% endset %} 
+{% else %}
+{% set pageHeaderTitle = headline %}
+{% set pageHeaderSummary = subheadline  %}
+{% endif %}
 {% include "partials/page-header.html" %}
 
 <div>{{nextEvent.content  | safe}}</div>
 
-<h1>{{ upcoming.headline }}</h1>
-<p>{{ upcoming.subheadline }}</p>
-
-{% for event in nextEvents %}
+{% if nextEvent%}
 <div>
+    <h1>{{ upcoming.headline }}</h1>
+    {% if nextEvents.length %}
+    <p>{{ upcoming.subheadline }}</p>
+    {% else %}
+    <p>{{ upcoming.subheadline2 }}</p>
+    {% endif %}
+</div>
+{% endif %}
+
+
+<div>
+    {% for event in nextEvents %}
     <h3>{{ event.data.title }}</h3>
     {% set dateInfo = helpers.getDateInfo(event.data.date) %}
     {% for day, hours, minutes, month, dayNum in dateInfo %}
