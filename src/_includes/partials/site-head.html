@@ -12,6 +12,18 @@
           >
         </li>
         {% endif %}
+        {% elif item.text == "Event" %}
+        {% if collections.events.length %}
+        <li>
+          <a 
+            href="{{ entry.url }}"
+            {{
+            helpers.getLinkActiveState(entry.url,
+            page.url)}}
+            >{{ entry.title }}</a
+          >
+        </li>
+        {% endif %}
         {% else %}
         <li>
           <a
