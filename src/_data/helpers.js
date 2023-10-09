@@ -106,11 +106,12 @@ module.exports = {
       "Nov.",
       "Dec.",
     ];
-    let afternoon = DAY.getHours() >12 ? true : false;
+    let afternoon = DAY.getHours() >11 && DAY.getHours() < 24 ? true : false;
     let minutes =
       DAY.getMinutes() < 10 ? "0" + DAY.getMinutes() : DAY.getMinutes();
     minutes+= afternoon ? "pm" :"am";
     let hours = afternoon ? DAY.getHours() - 12 : DAY.getHours();
+    hours = DAY.getHours() == 12 || DAY.getHours() ==0 ? 12 : hours;
       
     let dateInfo = [
       [
