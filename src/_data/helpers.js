@@ -66,15 +66,27 @@ module.exports = {
   },
   getNextEvent(collection) {
     const DAY = new Date();
-    for(counter in collection){
-      const EVENTDAY = new Date(collection[counter].data.date)
-      if( EVENTDAY < DAY){
-        return collection[counter]
+    for (counter in collection) {
+      const EVENTDAY = new Date(collection[counter].data.date);
+      console.log(EVENTDAY, DAY);
+      if (EVENTDAY > DAY) {
+        console.log(collection[counter].data.title);
+        return collection[counter];
       }
     }
     return null;
   },
   getNextEvents(collection, limit = 4) {
+    const DAY = new Date();
+    const EVENTS = new Array();
+    for (counter in collection) {
+      const EVENTDAY = new Date(collection[counter].data.date);
+      console.log(EVENTDAY, DAY);
+      if (EVENTDAY > DAY) {
+        console.log(collection[counter].data.title);
+        return collection[counter];
+      }
+    }
     return collection.slice(1, limit);
   },
   getDateInfo(date) {
@@ -101,7 +113,7 @@ module.exports = {
         weekday[DAY.getDay()],
         DAY.getHours(),
         minutes,
-        month[DAY.getDay()],
+        month[DAY.getMonth()],
         DAY.getDate(),
       ],
     ];
@@ -118,28 +130,35 @@ module.exports = {
     for (counter in collection) {
       //console.log("-----------------------------------------------");
       //console.log(collection[counter].data.category);
-      CATEGORIES.push(collection[counter].data.category)
+      CATEGORIES.push(collection[counter].data.category);
       counter--;
     }
     return [...new Set(CATEGORIES)];
   },
-  getSpecialDays(collection){
-    const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const SPECIALDAYS= new Array()
-    const DAYMAP = new Object()
-    for(counter in collection){
+  getSpecialDays(collection) {
+    const weekday = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    const SPECIALDAYS = new Array();
+    const DAYMAP = new Object();
+    for (counter in collection) {
       console.log(collection[counter].data.day);
-      let day=collection[counter].data.day;
-      DAYMAP[day]=weekday[day];
+      let day = collection[counter].data.day;
+      DAYMAP[day] = weekday[day];
+    }
+    for (i = 0; i < 8; i++) {
+      if (DAYMAP[i]) {
+        SPECIALDAYS.push([i, DAYMAP[i]]);
       }
-      for (i=0;i<8;i++){
-        if(DAYMAP[i]){
-          SPECIALDAYS.push([i,DAYMAP[i]])
-        }
       // weekday[counter]
     }
-    console.log(SPECIALDAYS)
+    console.log(SPECIALDAYS);
     return SPECIALDAYS;
-
-  }
+  },
 };
