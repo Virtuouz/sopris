@@ -166,4 +166,10 @@ module.exports = {
     console.log(SPECIALDAYS);
     return SPECIALDAYS;
   },
+  log(collection){
+    for(counter in collection){
+      console.log(collection[counter])
+    }
+    return "done"
+  }
 };
