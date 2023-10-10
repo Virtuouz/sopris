@@ -3,7 +3,7 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
 -%} {% if entry.title == "Blog" %} {% if collections.blog.length %}
 <li>
   <a
-    class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:text-sopris-green data-[state=active]:underline data-[state=active]:decoration-2 dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent "
+    class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:link dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent "
     href="{{ entry.url }}"
     {{
     helpers.getLinkActiveState(entry.url,
@@ -14,7 +14,7 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
 {% endif %} {% elif entry.title == "Event" %} {% if futureEvents ==true %}
 <li>
   <a
-    class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:text-sopris-green data-[state=active]:underline data-[state=active]:decoration-2 dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent "
+    class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:link dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent "
     href="{{ entry.url }}"
     {{
     helpers.getLinkActiveState(entry.url,
@@ -25,7 +25,7 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
 {% endif %} {% else %}
 <li>
   <a
-    class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:text-sopris-green data-[state=active]:underline data-[state=active]:decoration-2 dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent "
+    class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:link dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent "
     href="{{ entry.url }}"
     {{
     helpers.getLinkActiveState(entry.url,
@@ -79,7 +79,7 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
       {% image "src/images/Logo/soprisLogo.png", "mr-3 w-14 h-7 sm:w-[86px]
       sm:h-[50px]","Sopris Logo","(max-width: 200px) 200px, (max-width: 400px)
       400px, (max-width: 850px) 850px, (max-width: 1920px) 1920px, (max-width:
-      2500px) 2500px"%} >
+      2500px) 2500px"%}
     </a>
     <div
       class="flex md:order-3"
@@ -88,12 +88,7 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
     toggle .h-20 on the first <nav/> end
     "
     >
-      <button
-        type="button"
-        class="text-md mr-3 rounded-lg bg-sopris-mutedgreen px-4 py-2 text-center font-medium uppercase text-white hover:bg-sopris-green focus:outline-none focus:ring-4 focus:ring-blue-300 md:mr-0"
-      >
-        See the Menu
-      </button>
+    {% include "partials/cta-button.html" %}
       <button
         data-collapse-toggle="navbar-sticky"
         type="button"

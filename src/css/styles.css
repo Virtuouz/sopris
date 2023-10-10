@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .link {
+    @apply text-sopris-green text-lime-600 decoration-2 underline underline-offset-4;
+  }
+}
+
 /* Globals */
 
 @font-face {

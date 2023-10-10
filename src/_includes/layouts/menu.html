@@ -9,7 +9,7 @@ helpers.getSpecialDays(collections.specials) %}
   _="
 on loaded 
 log $isFocused
-if $isFocused is 0 add .text-lime-600 .decoration-2 .underline .underline-offset-4  to first <button/> in me"
+if $isFocused is 0 add .link  to first <button/> in me"
 >
 <h2 class="text-center">{{ mainMenu.headline }}</h2>
   {% if categories %}
@@ -27,8 +27,8 @@ if $isFocused is 0 add .text-lime-600 .decoration-2 .underline .underline-offset
               _="
                             on load if my innerHTML contains '-' call removeDash('{{ category }}') else return {{ category }} end
                             then put it into my innerHTML  end
-                            on focus remove .text-lime-600 .decoration-2 .underline .underline-offset-4 from .menu-categories
-                            add .text-lime-600 .decoration-2 .underline .underline-offset-4 to me
+                            on focus remove .link from .menu-categories
+                            add .link to me
                             add .hidden to .categories
                             remove .hidden from .{{category}}
                             set  $isFocused to 1 log $isFocused"
@@ -52,7 +52,7 @@ if $isFocused is 0 add .text-lime-600 .decoration-2 .underline .underline-offset
     category%}
     <li>
       <h4>{{ menuItem.data.title }}</h4>
-      <p>{{ menuItem.data.price }}</p>
+      <p class="text-sopris-creme">{{ menuItem.data.price }}</p>
       <p>{{ menuItem.data.desc }}</p>
     </li>
     {% endif %} {% endfor %}
@@ -64,7 +64,7 @@ if $isFocused is 0 add .text-lime-600 .decoration-2 .underline .underline-offset
   _="
 on loaded 
 log $isFocusedSpecial
-if $isFocusedSpecial is 0 add .text-lime-600 .decoration-2 .underline .underline-offset-4 to first <button/> in me"
+if $isFocusedSpecial is 0 add .link to first <button/> in me"
 >
 <h2 id="Specials" class="text-center">{{ specialMenu.headline }}</h2>
 <p class="text-center">{{ specialMenu.subheadline }}</p>
@@ -89,8 +89,8 @@ if $isFocusedSpecial is 0 add .text-lime-600 .decoration-2 .underline .underline
               _="
                             on load if my innerHTML contains '-' call removeDash('{{ category }}') else return {{ category }} end
                             then put it into my innerHTML  end
-                            on focus remove .text-lime-600 .decoration-2 .underline .underline-offset-4 from .menu-categories-special
-                            add .text-lime-600 .decoration-2 .underline .underline-offset-4 to me
+                            on focus remove .link from .menu-categories-special
+                            add .link to me
                             add .hidden to .categoriesSpecial
                             remove .hidden from .{{category}}
                             go to the top of #{{category}} -1rem

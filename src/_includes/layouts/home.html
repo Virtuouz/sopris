@@ -24,7 +24,7 @@ helpers.getTruncatedFaqSet(faq.items) %}
       400px) 400px, (max-width: 850px) 850px, (max-width: 1920px) 1920px,
       (max-width: 2500px) 2500px"%}
       <p>{{ section.subheadline }}</p>
-      <a href="{{section.link}}">{{ section.linktext}}</a>
+      <a href="{{section.link}}" class="link">{{ section.linktext}}</a>
     </div>
     {%endfor %}
   </div>
@@ -35,7 +35,7 @@ helpers.getTruncatedFaqSet(faq.items) %}
   %}
   <h2 id="special">{{ special.data.title }}</h2>
   <p>{{ special.data.summary }}</p>
-  <a href="/menu/#Specials"
+  <a href="/menu/#Specials" class="link"
     >See All Weekly Specials</a
   >
   {% endif %} {%endfor%}
@@ -67,7 +67,7 @@ helpers.getTruncatedFaqSet(faq.items) %}
   {% endfor %}
   <h2>{{ nextEvent.data.title }}</h2>
   <p>{{ nextEvent.data.summary }}</p>
-  <a href="">Learn More</a>
+  <a href="" class="text-sm mr-3 rounded-lg bg-sopris-mutedgreen px-2 py-1 text-center font-medium uppercase text-white hover:bg-lime-600 focus:outline-none focus:ring-4 focus:ring-blue-300 md:mr-0">Learn More</a>
   {# {% for event in nextEvents %}
   <h1>{{ event.data.title }}</h1>
   {% endfor %} #} {% else %}
