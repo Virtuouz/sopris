@@ -60,9 +60,6 @@ h4 {
   font-family: "piazzolla", sans-serif;
 }
 
-html {
-  scroll-padding-top: var(--nav-margin); /* height of sticky header */
-}
 
 /* Compositions */
 .flow > * + * {

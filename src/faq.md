@@ -5,6 +5,6 @@ eleventyNavigation:
 title: "Frequently Asked Questions"
 headline: "Frequently Asked quetsions"
 permalink: "/faq/index.html"
-backgroundImg: "/images/background/question.jpg"
+backgroundImg: ""
 layout: "layouts/faq.html"
 ---

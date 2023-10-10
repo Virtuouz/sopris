@@ -66,7 +66,7 @@ on loaded
 log $isFocusedSpecial
 if $isFocusedSpecial is 0 add .text-lime-600 .decoration-2 .underline .underline-offset-4 to first <button/> in me"
 >
-<h2 class="text-center">{{ specialMenu.headline }}</h2>
+<h2 id="Specials" class="text-center">{{ specialMenu.headline }}</h2>
 <p class="text-center">{{ specialMenu.subheadline }}</p>
 
   {% if SpecialDays %}
@@ -93,6 +93,7 @@ if $isFocusedSpecial is 0 add .text-lime-600 .decoration-2 .underline .underline
                             add .text-lime-600 .decoration-2 .underline .underline-offset-4 to me
                             add .hidden to .categoriesSpecial
                             remove .hidden from .{{category}}
+                            go to the top of #{{category}} -1rem
                             set  $isFocusedSpecial to 1 log $isFocusedSpecial"
             >
               {{ category }}
