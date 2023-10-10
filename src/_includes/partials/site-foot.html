@@ -1,60 +1,56 @@
-{% set navPages = collections.all | eleventyNavigation %}
-{% macro renderNavListItem(entry) -%}
-   {% if item.text == "Blog" %}
-        {% if collections.blog.length %}
-        <li >
-          <a class="nav-item"
-            href="{{ entry.url }}"
-            {{
-            helpers.getLinkActiveState(entry.url,
-            page.url)}}
-            >{{ entry.title }}</a
-          >
-        </li>
-        {% endif %}
-        {% else %}
-        <li c>
-          <a class="nav-item"
-            href="{{ entry.url }}"
-            {{
-            helpers.getLinkActiveState(entry.url,
-            page.url)}}
-            >{{ entry.title }}</a
-          >
-        </li>
-        {% endif %} 
-{%- if entry.children.length -%}
+{% set navPages = collections.all | eleventyNavigation %} {% set futureEvents =
+  helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
+  -%} {% if entry.title == "Blog" %} {% if collections.blog.length %}
+  <li>
+    <a
+      class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:link dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent "
+      href="{{ entry.url }}"
+      {{
+      helpers.getLinkActiveState(entry.url,
+      page.url) | safe}}
+      >{{ entry.title }}</a
+    >
+  </li>
+  {% endif %} {% elif entry.title == "Event" %} {% if futureEvents ==true %}
+  <li>
+    <a
+      class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:link dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent "
+      href="{{ entry.url }}"
+      {{
+      helpers.getLinkActiveState(entry.url,
+      page.url) | safe}}
+      >{{ entry.title }}</a
+    >
+  </li>
+  {% endif %} {% else %}
+  <li>
+    <a
+      class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:link dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent "
+      href="{{ entry.url }}"
+      {{
+      helpers.getLinkActiveState(entry.url,
+      page.url) | safe}}
+      >{{ entry.title }}</a
+    >
+  </li>
+  {% endif %} {%- if entry.children.length -%}
   <ul>
     {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
   </ul>
-{%- endif -%}
-</li>
-{%- endmacro %}
+  {%- endif -%} {%- endmacro %}
 
-<footer class="site-footer-container">
-  {% if homePage %} {% include "partials/background/wavesOpacity.svg" %} {%
-  endif %}
-
-  <div class="site-footer padding-2">
-    <div class="lt-container">
-      <div>
-        <a href="/" aria-label="{{ site.name}}"
-          >{% include "partials/logo/Vynxlabs-alt.svg" %}</a
-        >
-        <p>{{ contactInfo.email }}</p>
-        <p>{{ contactInfo.phone }}</p>
-      </div>
+<footer class="flex flex-col gap-8 mt-36">
+  <div class="flex flex-col justify-center items-center">
       <div class="footer-content">
         <div>
-          <h3 data-type="neutral">Navigation</h3>
-          <ul class="nav-list flow">
+          <ul class="flex gap-1 md:gap-4 flex-wrap justify-center">
             {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
-            <li><a class="nav-item" href="/privacy-policy">Privacy Policy</a></li>
             </ul>
         </div>
       </div>
-    </div>
   </div>
-  <p class="text-center bg-primary-400 margin-0 width-100vw" data-type="neutral">© {{ helpers.getTodaysYear() }}, by {{site.legalName}}</p>
-   <p class="text-center bg-primary-400 margin-0 width-100vw" data-type="neutral">Custom site manually coded by <a href="https://vynxlabs.com/">Vynxlabs</a> </p>
+  <div>
+    <p class="text-center" data-type="neutral">© {{ helpers.getTodaysYear() }}, by {{site.legalName}}</p>
+     <p class="text-center text-sm" data-type="neutral">Custom site manually coded by <a href="https://vynxlabs.com/" class="underline">Vynxlabs</a> </p>
+  </div>
 </footer>

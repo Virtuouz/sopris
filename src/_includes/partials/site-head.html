@@ -73,9 +73,9 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
 
 <nav class=" fixed left-0 top-0 z-20 w-full bg-gray-900 h-20 md:h-28">
   <div
-    class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
+    class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4 gap-2 md:gap-1"
   >
-    <a href="/" class="flex items-center md:order-3">
+    <a href="/" class="flex items-center md:order-3 ">
       {% image "src/images/Logo/soprisLogo.png", "mr-3 w-14 h-7 sm:w-[86px]
       sm:h-[50px]","Sopris Logo","(max-width: 200px) 200px, (max-width: 400px)
       400px, (max-width: 850px) 850px, (max-width: 1920px) 1920px, (max-width:
@@ -117,7 +117,7 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
       </button>
     </div>
     <div
-      class="hidden w-full items-center text-xs md:text-sm flex md:flex justify-between md:order-1 md:border-1 border-[#66574C] border-b py-1"
+      class="hidden w-full items-center text-xs md:text-sm flex md:flex justify-between md:order-1 md:border-1 border-[#66574C] border-b py-2"
       id="physical"
     >
       <div class="flex flex-col justify-between md:flex-row gap-2 md:gap-8 ">

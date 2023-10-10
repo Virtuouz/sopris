@@ -18,13 +18,13 @@
     </style>
   </head>
   {% include "partials/watermark.html" %}
-  <body class="mx-4 sm:mx-10 bg-sopris-darkgreen text-white">
+  <body class="mx-4 sm:mx-10 bg-sopris-darkgreen text-white flex flex-col">
     {% include "partials/site-head.html" %}
 
-    <main tabindex="-1" id="main-content" class="site-content flow mt-20 md:mt-28">
+    <main tabindex="-1" id="main-content" class="flex-1 flow mt-20 md:mt-28">
       {% block content %}{% endblock %}
     </main>
-    {# {% include "partials/site-foot.html" %} #}
+    {% include "partials/site-foot.html" %}
     <script defer>
       //
       //    Toggle Mobile Navigation
