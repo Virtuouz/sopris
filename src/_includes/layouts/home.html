@@ -16,9 +16,7 @@ helpers.getTruncatedFaqSet(faq.items) %}
   <p>{{ menu.subheadline }}</p>
   <div>
     {% for sections, section in menu.menusections %}
-    <div
-      class="meals"
-    >
+    <div class="meals">
       <h3 class="max-w">{{ section.headline }}</h3>
       {% image section.img, "max-w-xs","","(max-width: 200px) 200px, (max-width:
       400px) 400px, (max-width: 850px) 850px, (max-width: 1920px) 1920px,
@@ -35,9 +33,7 @@ helpers.getTruncatedFaqSet(faq.items) %}
   %}
   <h2 id="special">{{ special.data.title }}</h2>
   <p>{{ special.data.summary }}</p>
-  <a href="/menu/#Specials" class="link"
-    >See All Weekly Specials</a
-  >
+  <a href="/menu/#Specials" class="link">See All Weekly Specials</a>
   {% endif %} {%endfor%}
 </article>
 
@@ -67,7 +63,11 @@ helpers.getTruncatedFaqSet(faq.items) %}
   {% endfor %}
   <h2>{{ nextEvent.data.title }}</h2>
   <p>{{ nextEvent.data.summary }}</p>
-  <a href="" class="text-sm mr-3 rounded-lg bg-sopris-mutedgreen px-2 py-1 text-center font-medium uppercase text-white hover:bg-lime-600 focus:outline-none focus:ring-4 focus:ring-blue-300 md:mr-0">Learn More</a>
+  <a
+    href="/event"
+    class="bg-sopris-mutedgreen mr-3 rounded-lg px-2 py-1 text-center text-sm font-medium uppercase text-white hover:bg-lime-600 focus:outline-none focus:ring-4 focus:ring-blue-300 md:mr-0"
+    >Learn More</a
+  >
   {# {% for event in nextEvents %}
   <h1>{{ event.data.title }}</h1>
   {% endfor %} #} {% else %}
