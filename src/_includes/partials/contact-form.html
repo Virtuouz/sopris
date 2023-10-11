@@ -1,47 +1,101 @@
-<article class="form-container">
-  <div class="lt-container">
-    <form name="contact" method="POST" class="form-content" data-netlify="true" data-netlify-recaptcha="true">
-        <div>
-          <h2>Prefer Email?</h2>
-          <p class="form-input">
-            <label class="flex-col" for="">Name<input type="text" required name="name" /><span></span></label>
-          </p>
-          <p class="form-input">
-            <label class="flex-col" for="">Business<input type="text" name="business"/></label>
-          </p>
-          <p class="form-input">
-            <label class="flex-col" for="">Email<input type="email" name="email" required /><span></span></label>
-          </p>
-          <p class="form-input">
-            <label class="flex-col" for="">Phone<input type="tel"  name="phone"/></label>
-          </p>
-          <p class="form-input">
-            <label class="flex-col" for=""
-              >Message<textarea
-                cols="30"
-                rows="10"
-                name="message"
-                required
-              ></textarea
-              ><span></span
-            ></label>
-          </p>
-        </p>
-        <div data-netlify-recaptcha="true"></div>
-        <p>
-          <button type="submit" class="button">Send</button>
-        </div>
-    </form>
+<article class="flex justify-center">
+  <div class="flex w-full justify-center">
+    <form
+      name="contact"
+      method="POST"
+      class="bg-sopris-gray w-[512px] rounded p-4"
+      data-netlify="true"
+      data-netlify-recaptcha="true"
+    >
 
-    <div class="form-info">
-      <div class="flex-row">
-        {% include "partials/icons/025-arroba.svg" %}
-        <p>{{ contactInfo.email }}</p>
-      </div>
-      <div class="flex-row">
-        {% include "partials/icons/029-telephone-1.svg" %}
-        <p>{{ contactInfo.phone }}</p>
+    <div class="flex flex-col items-center">
+      {% image "src/images/Logo/soprisLogo.png", "mr-3 w-[86px]
+      h-[50px] mt-7","Sopris Logo","(max-width: 200px) 200px, (max-width: 400px)
+      400px, (max-width: 850px) 850px, (max-width: 1920px) 1920px, (max-width:
+      2500px) 2500px"%}
+      <div
+        class=" w-full items-center text-xs  flex  justify-between   border-[#66574C] border-b py-2 pb-7 mt-7 gap-2"
+        id="physical"
+      >
+        <div class="flex flex-col justify-between gap-2 ">
+          <a href="/location" class="block underline">{{ contactInfo.location }}</a >
+          <p>{{ contactInfo.hours }}</p>
+        </div>
+        <div class="flex flex-col justify-between gap-2">
+          <a href="tel:{{ contactInfo.email }}" class="block underline">{{ contactInfo.email }}</a >
+          <a href="mailto:{{ contactInfo.phone }}" class="block underline self-end">{{ contactInfo.phone }}</a >
+        </div>
       </div>
     </div>
+
+      <div class="">
+        <h2 class="my-7 text-center">Send Us a Message</h2>
+        <div class="flex justify-between gap-4">
+          <p class="max-w-[200px]">
+            <label class="mb-2 mt-4 flex flex-col" for=""
+              >First Name*<input
+                type="text"
+                required
+                name="first name"
+                class="bg-sopris-light h-9 w-full rounded pl-2 shadow-[0px_4px_8px_0px_rgba(0,0,0,0.25)_inset]"
+                placeholder="John" /><span></span
+            ></label>
+          </p>
+          <p class="max-w-[200px]">
+            <label class="mb-2 mt-4 flex flex-col" for=""
+              >Last Name<input
+                type="text"
+                name="last name"
+                class="bg-sopris-light h-9 w-full rounded pl-2 shadow-[0px_4px_8px_0px_rgba(0,0,0,0.25)_inset]"
+                placeholder="Smith"
+            /></label>
+          </p>
+        </div>
+        <p class="">
+          <label class="mb-2 mt-4 flex flex-col" for=""
+            >Email*<input
+              type="email"
+              name="email"
+              class="bg-sopris-light h-9 w-full rounded pl-2 shadow-[0px_4px_8px_0px_rgba(0,0,0,0.25)_inset]"
+              required
+              placeholder="JSmith@email.com" /><span></span
+          ></label>
+        </p>
+        <p class="">
+          <label class="mb-2 mt-4 flex flex-col" for=""
+            >Phone<input
+              type="tel"
+              name="phone"
+              class="bg-sopris-light h-9 w-full rounded pl-2 shadow-[0px_4px_8px_0px_rgba(0,0,0,0.25)_inset]"
+              placeholder="123-456-7890"
+          /></label>
+        </p>
+        <p class="">
+          <label class="" for=""
+            >Message*<textarea
+              cols="30"
+              rows="10"
+              name="message"
+              required
+              class="bg-sopris-light max-h-60 w-full max-w-full rounded pl-2 shadow-[0px_4px_8px_0px_rgba(0,0,0,0.25)_inset]"
+              placeholder="Hey I was wondering..."
+            ></textarea
+            ><span></span
+          ></label>
+        </p>
+
+        
+        <div class="flex flex-col">
+          <p class="text-sm">*Are Required</p>
+          <div data-netlify-recaptcha="true"></div>
+          <button
+            type="submit"
+            class="bg-sopris-mutedgreen max-w-min self-end mr-3 h-min rounded px-2 py-1 text-center text-sm font-medium uppercase text-white hover:bg-lime-600 focus:outline-none focus:ring-4 focus:ring-blue-300 md:mr-0 md:px-4 md:py-2 md:text-base"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
   </div>
 </article>

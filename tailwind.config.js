@@ -9,7 +9,9 @@ module.exports = {
           green: '#B4E89B',
           mutedgreen: "#799C68",
           darkgreen: "#060D02",
-          creme: "#E4C590"
+          creme: "#E4C590",
+          gray: "#242626",
+          light: "#474949"
         }
       },
     },
