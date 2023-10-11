@@ -3,33 +3,39 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
 -%} {% if entry.title == "Blog" %} {% if collections.blog.length %}
 <li>
   <a
-    class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:link dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent uppercase"
+    class="data-[state=active]:link block rounded py-2 pl-3 pr-4 uppercase text-white hover:bg-gray-700 hover:text-sopris-green dark:border-gray-700 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
     href="{{ entry.url }}"
     {{
     helpers.getLinkActiveState(entry.url,
-    page.url) | safe}}
+    page.url)
+    |
+    safe}}
     >{{ entry.title }}</a
   >
 </li>
 {% endif %} {% elif entry.title == "Event" %} {% if futureEvents ==true %}
 <li>
   <a
-    class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:link dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent uppercase"
+    class="data-[state=active]:link block rounded py-2 pl-3 pr-4 uppercase text-white hover:bg-gray-700 hover:text-sopris-green dark:border-gray-700 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
     href="{{ entry.url }}"
     {{
     helpers.getLinkActiveState(entry.url,
-    page.url) | safe}}
+    page.url)
+    |
+    safe}}
     >{{ entry.title }}</a
   >
 </li>
 {% endif %} {% else %}
 <li>
   <a
-    class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:link dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent uppercase"
+    class="data-[state=active]:link block rounded py-2 pl-3 pr-4 uppercase text-white hover:bg-gray-700 hover:text-sopris-green dark:border-gray-700 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
     href="{{ entry.url }}"
     {{
     helpers.getLinkActiveState(entry.url,
-    page.url) | safe}}
+    page.url)
+    |
+    safe}}
     >{{ entry.title }}</a
   >
 </li>
@@ -71,21 +77,18 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
 </header>
 #}
 
-<nav class=" fixed left-0 top-0 z-20 w-full bg-gray-900 h-20 md:h-28">
+<nav class="cs-nav-background fixed left-0 top-0 z-20 h-20 w-full md:h-28">
   <div
-    class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4 gap-2 md:gap-1"
+    class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between gap-2 p-4 md:gap-1"
   >
-    <a href="/" class="flex items-center md:order-3 ">
+    <a href="/" class="flex items-center md:order-3">
       {% image "src/images/Logo/soprisLogo.png", "mr-3 w-14 h-7 sm:w-[86px]
       sm:h-[50px]","Sopris Logo","(max-width: 200px) 200px, (max-width: 400px)
       400px, (max-width: 850px) 850px, (max-width: 1920px) 1920px, (max-width:
       2500px) 2500px"%}
     </a>
-    <div
-      class="flex md:order-3 items-center"
-      
-    >
-    {% include "partials/cta-button.html" %}
+    <div class="flex items-center md:order-3">
+      {% include "partials/cta-button.html" %}
       <button
         data-collapse-toggle="navbar-sticky"
         type="button"
@@ -117,25 +120,31 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
       </button>
     </div>
     <div
-      class="hidden w-full items-center text-xs md:text-sm flex md:flex justify-between md:order-1 md:border-1 border-white border-opacity-20 border-b py-2"
+      class="md:border-1 flex hidden w-full items-center justify-between border-b border-white border-opacity-20 py-2 text-xs md:order-1 md:flex md:text-sm"
       id="physical"
     >
-      <div class="flex flex-col justify-between md:flex-row gap-2 md:gap-8 ">
-        <a href="/location" class="block underline">{{ contactInfo.location }}</a >
+      <div class="flex flex-col justify-between gap-2 md:flex-row md:gap-8">
+        <a href="/location" class="block underline"
+          >{{ contactInfo.location }}</a
+        >
         <p>{{ contactInfo.hours }}</p>
       </div>
-      <div class="flex flex-col justify-between md:flex-row gap-2 md:gap-8">
-        <a href="tel:{{ contactInfo.phone }}" class="block underline">{{ contactInfo.phone }}</a >
-        <a href="mailto:{{ contactInfo.email }}" class="block underline">{{ contactInfo.email }}</a >
+      <div class="flex flex-col justify-between gap-2 md:flex-row md:gap-8">
+        <a href="tel:{{ contactInfo.phone }}" class="block underline"
+          >{{ contactInfo.phone }}</a
+        >
+        <a href="mailto:{{ contactInfo.email }}" class="block underline"
+          >{{ contactInfo.email }}</a
+        >
       </div>
     </div>
-    
+
     <div
       class="hidden w-full items-center justify-between md:order-2 md:flex md:w-auto"
       id="navbar-sticky"
     >
       <ul
-        class="mt-4 flex flex-col rounded border p-4 font-medium border-gray-700 bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 md:bg-gray-900"
+        class="mt-4 flex flex-col rounded border border-gray-700 bg-gray-800 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-transparent md:p-0"
       >
         {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
       </ul>
