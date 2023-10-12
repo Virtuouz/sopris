@@ -1,57 +1,71 @@
 {% set navPages = collections.all | eleventyNavigation %} {% set futureEvents =
-  helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
-  -%} {% if entry.title == "Blog" %} {% if collections.blog.length %}
-  <li>
-    <a
-      class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:link dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent "
-      href="{{ entry.url }}"
-      {{
-      helpers.getLinkActiveState(entry.url,
-      page.url) | safe}}
-      >{{ entry.title }}</a
-    >
-  </li>
-  {% endif %} {% elif entry.title == "Event" %} {% if futureEvents ==true %}
-  <li>
-    <a
-      class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:link dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent "
-      href="{{ entry.url }}"
-      {{
-      helpers.getLinkActiveState(entry.url,
-      page.url) | safe}}
-      >{{ entry.title }}</a
-    >
-  </li>
-  {% endif %} {% else %}
-  <li>
-    <a
-      class="block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 data-[state=active]:link dark:border-gray-700  md:p-0 md:hover:bg-transparent hover:text-sopris-green md:dark:hover:bg-transparent "
-      href="{{ entry.url }}"
-      {{
-      helpers.getLinkActiveState(entry.url,
-      page.url) | safe}}
-      >{{ entry.title }}</a
-    >
-  </li>
-  {% endif %} {%- if entry.children.length -%}
-  <ul>
-    {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
-  </ul>
-  {%- endif -%} {%- endmacro %}
+helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
+-%} {% if entry.title == "Blog" %} {% if collections.blog.length %}
+<li>
+  <a
+    class="data-[state=active]:link block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 hover:text-sopris-green dark:border-gray-700 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+    href="{{ entry.url }}"
+    {{
+    helpers.getLinkActiveState(entry.url,
+    page.url)
+    |
+    safe}}
+    >{{ entry.title }}</a
+  >
+</li>
+{% endif %} {% elif entry.title == "Event" %} {% if futureEvents ==true %}
+<li>
+  <a
+    class="data-[state=active]:link block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 hover:text-sopris-green dark:border-gray-700 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+    href="{{ entry.url }}"
+    {{
+    helpers.getLinkActiveState(entry.url,
+    page.url)
+    |
+    safe}}
+    >{{ entry.title }}</a
+  >
+</li>
+{% endif %} {% else %}
+<li>
+  <a
+    class="data-[state=active]:link block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-700 hover:text-sopris-green dark:border-gray-700 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+    href="{{ entry.url }}"
+    {{
+    helpers.getLinkActiveState(entry.url,
+    page.url)
+    |
+    safe}}
+    >{{ entry.title }}</a
+  >
+</li>
+{% endif %} {%- if entry.children.length -%}
+<ul>
+  {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+</ul>
+{%- endif -%} {%- endmacro %}
 
-<footer class="flex flex-col gap-8 mt-36">
+<footer
+  class="mt-36 flex flex-col gap-8 bg-[url(/images/svg/Foods-Bottom.svg)] bg-cover bg-no-repeat sm:relative sm:left-2/4 sm:right-2/4 sm:mx-[-50vw] sm:w-screen"
+>
   {% include "partials/contact-form.html" %}
-  <div class="flex flex-col justify-center items-center">
-      <div class="footer-content">
-        <div>
-          <ul class="flex gap-1 md:gap-4 flex-wrap justify-center">
-            {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
-            </ul>
-        </div>
+  <div class="flex flex-col items-center justify-center">
+    <div class="footer-content">
+      <div>
+        <ul class="flex flex-wrap justify-center gap-1 md:gap-4">
+          {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor
+          -%}
+        </ul>
       </div>
+    </div>
   </div>
   <div>
-    <p class="text-center" data-type="neutral">© {{ helpers.getTodaysYear() }}, by {{site.legalName}}</p>
-     <p class="text-center text-sm" data-type="neutral">Custom site designed & developed by <a href="https://vynxlabs.com/" class="underline">Vynxlabs</a> </p>
+    <p class="text-center" data-type="neutral">
+      © {{ helpers.getTodaysYear() }}, by {{site.legalName}}
+    </p>
+    <p class="text-center text-sm" data-type="neutral">
+      Custom site designed & developed by
+      <a href="https://vynxlabs.com/" class="underline">Vynxlabs</a>
+    </p>
   </div>
 </footer>

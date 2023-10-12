@@ -1,6 +1,7 @@
 {% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% set
 pageHeaderSummary = subheadline %} {% block content %} {% include
 "partials/page-header.html" %}
+{%include "partials/foods-top.html" %}
 <article >
   <div>
     {% for item in faq.items %} {% for faq in item.faqSet %}

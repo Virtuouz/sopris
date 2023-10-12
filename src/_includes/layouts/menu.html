@@ -2,7 +2,8 @@
 title %} {% set pageHeaderSummary = subheadline %} {% include
 "partials/page-header.html" %} {% set categories =
 helpers.getMenuCategories(collections.menu) %} {% set SpecialDays =
-helpers.getSpecialDays(collections.specials) %}
+helpers.getSpecialDays(collections.specials) %} {%include
+"partials/foods-top.html" %}
 
 <article
   class="waiting"
@@ -11,7 +12,7 @@ on loaded
 log $isFocused
 if $isFocused is 0 add .link  to first <button/> in me"
 >
-<h2 class="text-center">{{ mainMenu.headline }}</h2>
+  <h2 class="text-center">{{ mainMenu.headline }}</h2>
   {% if categories %}
   <div class="flex justify-center">
     <div class="relative m-[1em] max-w-3xl overflow-hidden">
@@ -66,8 +67,8 @@ on loaded
 log $isFocusedSpecial
 if $isFocusedSpecial is 0 add .link to first <button/> in me"
 >
-<h2 id="Specials" class="text-center">{{ specialMenu.headline }}</h2>
-<p class="text-center">{{ specialMenu.subheadline }}</p>
+  <h2 id="Specials" class="text-center">{{ specialMenu.headline }}</h2>
+  <p class="text-center">{{ specialMenu.subheadline }}</p>
 
   {% if SpecialDays %}
   <div class="flex justify-center">
