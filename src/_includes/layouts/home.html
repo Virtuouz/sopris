@@ -5,11 +5,15 @@ helpers.getNextEvents(collections.events) %} {% set dateInfo =
 helpers.getDateInfo(nextEvent.data.date) %} {% set faqSet =
 helpers.getTruncatedFaqSet(faq.items) %}
 
-<article>
+<div
+  class="cs-hp-hero absolute bg-scroll lg:bg-fixed left-2/4 right-2/4 -z-10 mx-[-50vw] h-[80vh] w-screen bg-[url(/images/background/Sopris-Hero.jpg)] bg-cover bg-right bg-no-repeat"
+></div>
+<article class="h-[80vh]">
   <h1>{{ hero.headline }}<br /><span>{{ hero.restaurant }}</span></h1>
   <p>{{ hero.subheadline }}<strong>{{ hero.subheadbold }}</strong></p>
   {% include "partials/cta-button.html" %}
 </article>
+
 {%include "partials/foods-top.html" %}
 
 <article>
@@ -66,7 +70,7 @@ helpers.getTruncatedFaqSet(faq.items) %}
   <p>{{ nextEvent.data.summary }}</p>
   <a
     href="/event"
-    class="bg-sopris-mutedgreen mr-3 rounded px-2 py-1 text-center text-sm font-medium uppercase text-white hover:bg-lime-600 focus:outline-none focus:ring-4 focus:ring-blue-300 md:mr-0"
+    class="mr-3 rounded bg-sopris-mutedgreen px-2 py-1 text-center text-sm font-medium uppercase text-white hover:bg-lime-600 focus:outline-none focus:ring-4 focus:ring-blue-300 md:mr-0"
     >Learn More</a
   >
   {# {% for event in nextEvents %}

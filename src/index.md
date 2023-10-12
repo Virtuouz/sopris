@@ -6,6 +6,7 @@ homePage: "yes"
 title: "Mexican American Cuisine"
 metaDesc: ""
 layout: "layouts/home.html"
+heroImg: "/images/background/Sopris-Hero.jpg"
 hero:
   headline: "Taco Tuesday or Burger Bliss?\nExplore Both at"
   restaurant: "Sopris!"

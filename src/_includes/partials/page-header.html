@@ -1,7 +1,9 @@
 <div class="page-header">
-     {% if pageHeaderTitle %}
-    <h1 {% if backgroundImg %} data-type="neutral" {% endif %}>{{ pageHeaderTitle }}</h1>
-    {% endif %} {% if pageHeaderSummary%}
-    <p class="text-subheadline">{{ pageHeaderSummary | safe }}</p>
-    {% endif %}
+  {% if pageHeaderTitle %}
+  <h1 class="text-5xl md:text-8xl font-semibold text-center"  {% if backgroundImg %} data-type="neutral" {% endif %}>
+    {{ pageHeaderTitle }}
+  </h1>
+  {% endif %} {% if pageHeaderSummary%}
+  <p class="text-subheadline">{{ pageHeaderSummary | safe }}</p>
+  {% endif %}
 </div>

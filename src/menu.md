@@ -5,8 +5,8 @@ eleventyNavigation:
 title: "Menu"
 layout: "layouts/menu.html"
 permalink: "/menu/index.html"
-backgroundImg: ""
-headline: "Menu"
+backgroundImg: "/images//background/Sopris_v4-transformed.jpeg"
+headline: "MENU"
 subheadline: ""
 mainMenu:
     headline: "What Are You Craving?"

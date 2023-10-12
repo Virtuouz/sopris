@@ -5,7 +5,7 @@ eleventyNavigation:
 title: "Event"
 layout: "layouts/event.html"
 permalink: "/event/index.html"
-backgroundImg: ""
+backgroundImg: "/images/background/event.jpg"
 headline: "More Events Soon"
 subheadline: "We more events to come. Stay tuned!"
 upcoming:
