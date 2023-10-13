@@ -1,6 +1,6 @@
 {% if homePage %}
 {% cssBackground "src" + heroImg, ".cs-hp-hero", [600, 800, 900, 1100, 1500, 2000] %}
-
+{% cssBackground "src" + menucta.img, ".cs-menucta", [300,400] %}
 {% endif %}
 
 {% if backgroundImg %}

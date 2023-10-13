@@ -38,20 +38,23 @@ helpers.getTruncatedFaqSet(faq.items) %}
   %}
   <div class="flex flex-col items-center">
     <h2 id="special" class="max-w-2xl text-center text-[40px]">Todays Weekly Special:<br><div>{{ special.data.title }}</div></h2>
-    {% image special.data.img, "mt-[-50px]","","(max-width: 500px) 300px, (max-width: 700px) 500px, (max-width: 1000px) 675px", [300,500,675]%}
+    {% image special.data.img, "mt-[-25px]","","(max-width: 500px) 300px, (max-width: 700px) 500px, (max-width: 1000px) 675px", [300,500,675]%}
     <p>{{ special.data.summary }}</p>
-    <a href="/menu/#{{ helpers.getTodayString()}}" class="link">See All Weekly Specials</a>
+    <a href="/menu/#Specials" class="link">See All Weekly Specials</a>
   </div>
   {% endif %} {%endfor%}
 </article>
 
-<article>
-  <h2>{{ menucta.headline }}</h2>
-  <p>{{ menucta.subheadline }}</p>
+{# -top-[100px] left-[350px] #}
+<article class="flex flex-col items-center mt-80 relative">
+  <div class="cs-menucta bg-[url(/images/background/menu.png)] h-48 w-48  md:h-96 md:w-96 absolute bg-contain bg-no-repeat -rotate-[24deg] -top-[-10%] left-[10%] sm:-top-[-25%] sm:left-[30%] md:-top-[40%] md:left-[25%] -z-10
+  "></div>
+  <h2 class="text-[40px] text-center">{{ menucta.headlinep1 }} <br> <div>{{ menucta.headlinep2 }}</div></h2>
+  <p class="mt-6 mb-7">{{ menucta.subheadline }}</p>
   {% include "partials/cta-button.html" %}
 </article>
 
-<article>
+<article class="mt-72">
   <h2>{{ benefits.headline }}</h2>
   {% for benefits, benefititem in benefits.benefitlist %}
   <div>
@@ -61,7 +64,7 @@ helpers.getTruncatedFaqSet(faq.items) %}
   {% endfor %}
 </article>
 
-<article>
+<article class="max-w-md">
   <h1 class="text-[2.5rem]">Upcoming Event</h1>
   {% if nextEvent %} {% for day, hours, minutes, month, dayNum in dateInfo %}
   <p class="font-bold uppercase text-lime-600">
@@ -97,7 +100,7 @@ helpers.getTruncatedFaqSet(faq.items) %}
     </li>
     {% endfor %}
   </ul>
-  <a href="/faq">See All FAQ</a>
+  <a href="/faq" class="link">See All FAQ</a>
 </article>
 
 <article>

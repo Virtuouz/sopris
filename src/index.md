@@ -35,8 +35,10 @@ menu:
       linktext: "View Diner Menu"
       img: "src/images/food/wepik-export-20230926051346UVjH.png"
 menucta:
-  headline: "Hungry for More?\nExplore Our Full Menu!"
+  headlinep1: "Hungry for More?"
+  headlinep2: "Explore Our Full Menu!"
   subheadline: "From breakfast to dessert, we've got your cravings covered."
+  img: "/images/background/menu.png"
 benefits:
   headline: "Why Dine At Sopris?"
   benefitlist:

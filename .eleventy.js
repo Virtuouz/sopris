@@ -59,7 +59,7 @@ function imageCssBackground(src, selector, widths) {
     `${selector} { background-image: url(${metadata.jpeg[0].url});} `,
   ];
   // i use always jpeg for backgrounds
-  metadata.jpeg.slice(1).forEach((image, idx) => {
+  metadata.webp.slice(1).forEach((image, idx) => {
     markup.push(
       `@media (min-width: ${metadata.jpeg[idx].width}px) { ${selector} {background-image: url(${image.url});}}`
     );
