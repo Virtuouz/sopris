@@ -51,8 +51,8 @@ if $isFocused is 0 add .link  to first <button/> in me"
   <ul class="categories {{category}} hidden flex flex-wrap justify-around lg:justify-between gap-10">
     {% for menuItem in collections.menu %} {% if menuItem.data.category ==
     category%}
-    <li class="flex max-w-xl min-w-min flex-grow flex-shrink basis-[450px]  h-24 gap-4">
-        {% image menuItem.data.img, "rounded border-white border min-w-[150px]","","(max-width: 400px) 400px", [150]%}
+    <li class="flex max-w-xl min-w-min flex-grow flex-shrink basis-[450px]  h-30 gap-4">
+        {% image menuItem.data.img, "rounded border-white border min-w-[125px]  sm:min-w-[150px]","","(max-width: 400px) 400px", [150]%}
         <div class=" flex-grow flex-shrink">
           <div class="flex justify-between gap-2">
             <h4 class="text-xl font-semibold" >{{ menuItem.data.title }}</h4>
