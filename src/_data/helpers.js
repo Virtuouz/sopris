@@ -65,6 +65,19 @@ module.exports = {
     const DAY = new Date();
     return DAY.getDay();
   },
+  getTodayString(){
+    const weekday = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ]
+    const DAY= new Date();
+    return weekday[DAY.getDay()]
+  },
   futureEvents(collection){
     const DAY = new Date();
     for (counter in collection) {

@@ -18,27 +18,30 @@ helpers.getTruncatedFaqSet(faq.items) %}
 
 {%include "partials/foods-top.html" %}
 
-<article class="">
-  <h2>{{ menu.headline }}</h2>
-  <p>{{ menu.subheadline }}</p>
-  <div>
+<article class="mt-20">
+  <h2 class="text-[40px] text-center">{{ menu.headline }}</h2>
+  <p class="text-lg text-center">{{ menu.subheadline }}</p>
+  <div class="mt-28 flex gap-10 flex-wrap justify-around">
     {% for sections, section in menu.menusections %}
-    <div class="meals">
-      <h3 class="max-w">{{ section.headline }}</h3>
+    <div class="meals max-w-[400px] flex flex-col items-center">
+      <h3 class="text-3xl text-center">{{ section.headline }}</h3>
       {% image section.img, "max-w-xs","","(max-width: 400px) 200px", [300]%}
-      <p>{{ section.subheadline }}</p>
-      <a href="{{section.link}}" class="link">{{ section.linktext}}</a>
+      <p class="">{{ section.subheadline }}</p>
+      <a href="{{section.link}}" class="link ">{{ section.linktext}}</a>
     </div>
     {%endfor %}
   </div>
 </article>
 
-<article>
+<article class="mt-36">
   {% for special in specialsList %} {% if special.data.day == helpers.getToday()
   %}
-  <h2 id="special">{{ special.data.title }}</h2>
-  <p>{{ special.data.summary }}</p>
-  <a href="/menu/#Specials" class="link">See All Weekly Specials</a>
+  <div class="flex flex-col items-center">
+    <h2 id="special" class="max-w-2xl text-center text-[40px]">Todays Weekly Special:<br><div>{{ special.data.title }}</div></h2>
+    {% image special.data.img, "mt-[-50px]","","(max-width: 500px) 300px, (max-width: 700px) 500px, (max-width: 1000px) 675px", [300,500,675]%}
+    <p>{{ special.data.summary }}</p>
+    <a href="/menu/#{{ helpers.getTodayString()}}" class="link">See All Weekly Specials</a>
+  </div>
   {% endif %} {%endfor%}
 </article>
 
