@@ -26,7 +26,7 @@ helpers.getTruncatedFaqSet(faq.items) %}
     <div class="meals max-w-[400px] flex flex-col items-center">
       <h3 class="text-3xl text-center">{{ section.headline }}</h3>
       {% image section.img, "max-w-xs","","(max-width: 400px) 200px", [300]%}
-      <p class="">{{ section.subheadline }}</p>
+      <p class="text-center">{{ section.subheadline }}</p>
       <a href="{{section.link}}" class="link ">{{ section.linktext}}</a>
     </div>
     {%endfor %}
@@ -54,14 +54,17 @@ helpers.getTruncatedFaqSet(faq.items) %}
   {% include "partials/cta-button.html" %}
 </article>
 
-<article class="mt-72">
-  <h2>{{ benefits.headline }}</h2>
-  {% for benefits, benefititem in benefits.benefitlist %}
-  <div>
-    <h3>{{ benefititem.headline }}</h3>
-    <p>{{ benefititem.desc }}</p>
+<article class="mt-72 flex flex-col items-center">
+  <h2 class="text-center text-[40px] ">{{ benefits.headline }}</h2>
+  <div class="mt-12 flex gap-14 flex-wrap-reverse justify-around">
+    {% for benefits, benefititem in benefits.benefitlist %}
+    <div class="p-4 max-w-[250px] h-[300px] flex flex-col items-center rounded flex-1 min-w-[175px] {% if benefititem.center %} bg-[#252626] max-[715px]:order-2 max-[437px]:order-[0] {% else %} bg-[#151616] {% endif %}">
+      <div class="w-[60px] h-[60px]">{% include benefititem.icon %}</div>
+      <h3 class="text-xl">{{ benefititem.headline }}</h3>
+      <p>{{ benefititem.desc }}</p>
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </article>
 
 <article class="max-w-md">

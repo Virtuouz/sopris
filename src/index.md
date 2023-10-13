@@ -45,12 +45,16 @@ benefits:
     benefit1:
       headline: "Never Rushed"
       desc: "Experience cuisine that's never rushed, ensuring every dish is prepared with care and expertise."
+      icon: "partials/icons/breakfast.svg"
     benefit2:
       headline: "Skilled Chef"
       desc: "At Sopris, our kitchen is led by a skilled chef with over a decade of culinary expertise."
+      icon: "partials/icons/chef.svg"
+      center: "Yes"
     benefit3:
       headline: "A Familiar Experience"
       desc: "Sopris offers more than just a meal; it provides a warm and welcoming ambiance that makes you feel right at home."
+      icon: "partials/icons/chair.svg"
 about:
   headline: "About Sopris"
 ---
