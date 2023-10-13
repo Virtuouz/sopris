@@ -6,17 +6,19 @@ helpers.getDateInfo(nextEvent.data.date) %} {% set faqSet =
 helpers.getTruncatedFaqSet(faq.items) %}
 
 <div
-  class="cs-hp-hero absolute bg-scroll lg:bg-fixed left-2/4 right-2/4 -z-10 mx-[-50vw] h-[80vh] w-screen bg-[url(/images/background/Sopris-Hero.jpg)] bg-cover bg-right bg-no-repeat"
+  class="cs-hp-hero absolute bg-scroll lg:bg-fixed left-2/4 right-2/4 -z-10 mx-[-50vw] h-[calc(80vh_+_70px)] w-screen bg-[url(/images/background/Sopris-Hero.jpg)] bg-cover bg-right bg-no-repeat
+  before:bg-[radial-gradient(50%_50%_at_50%_50%,_#000_0%,_rgba(0,0,0,0.3)_100%)] before:absolute before:w-full before:h-full"
 ></div>
 <article class="h-[80vh]">
-  <h1>{{ hero.headline }}<br /><span>{{ hero.restaurant }}</span></h1>
-  <p>{{ hero.subheadline }}<strong>{{ hero.subheadbold }}</strong></p>
+  <h1 class="font-bold text-[32px] max-w-[462px] mt-[72px]" >{{ hero.headline  }}<br /><div class="mt-[-30px] md:mt-[-60px] ml-[-8px] md:ml-[-16px] text-[80px] md:text-[142px] ">{{ hero.restaurant }}</div></h1>
+  
+  <p class="max-w-[440px] text-lg mb-8">{{ hero.subheadline }}<strong>{{ hero.subheadbold }}</strong></p>
   {% include "partials/cta-button.html" %}
 </article>
 
 {%include "partials/foods-top.html" %}
 
-<article>
+<article class="">
   <h2>{{ menu.headline }}</h2>
   <p>{{ menu.subheadline }}</p>
   <div>
