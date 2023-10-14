@@ -78,12 +78,10 @@ module.exports = {
     return weekday[DAY.getDay()]
   },
   futureEvents(collection){
-    const MSTOFFSET = -6 * 60
     const DAY = new Date();
-    DAY.setMinutes( DAY.getMinutes() - MSTOFFSET)
     for (counter in collection) {
       const EVENTDAY = new Date(collection[counter].data.date);
-      console.log(EVENTDAY)
+      console.log("Current time: "+DAY+" Event Time: "+EVENTDAY)
       
       if (EVENTDAY > DAY) {
         return true;
