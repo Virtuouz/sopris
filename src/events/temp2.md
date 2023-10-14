@@ -2,7 +2,7 @@
 title: "Tee Off in Style: Golf Masters Watch Party"
 summary: "Experience the Golf Masters like never before at Sopris! Join us for an exciting day of golf, delicious food, and themed cocktails. We'll have the tournament on our giant screens, golf-themed cocktails and scrumptious bites, and contests with prizes!"
 category: "Golf"
-date: "2023-10-14T22:00"
+date: "2023-10-14T19:00"
 img: "src/images/event/golf.png"
 ---
 ## **Golf Masters Watch Party at Sopris**
