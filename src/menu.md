@@ -5,7 +5,7 @@ eleventyNavigation:
 title: "Menu"
 layout: "layouts/menu.html"
 permalink: "/menu/index.html"
-backgroundImg: "/images//background/Sopris_v4-transformed.jpeg"
+backgroundImg: "/images//background/Sopris_v4-resize-transformed.jpeg"
 headline: "MENU"
 subheadline: ""
 mainMenu:
