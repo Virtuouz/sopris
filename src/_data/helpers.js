@@ -14,7 +14,6 @@ module.exports = {
       response = ' aria-current="page"';
     }
 
-    console.log("Logging for "+itemUrl+" length "+itemUrl.length+"\n"+pageUrl.indexOf(itemUrl)+"\n")
     if ((itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0) ) {
       response += " data-state=active";
     }
@@ -79,9 +78,12 @@ module.exports = {
     return weekday[DAY.getDay()]
   },
   futureEvents(collection){
+    const MSTOFFSET = -6 * 60
     const DAY = new Date();
+    DAY.setMinutes( DAY.getMinutes() - MSTOFFSET)
     for (counter in collection) {
       const EVENTDAY = new Date(collection[counter].data.date);
+      console.log(EVENTDAY)
       
       if (EVENTDAY > DAY) {
         return true;
@@ -90,10 +92,11 @@ module.exports = {
     return false;
   },
   getNextEvent(collection) {
+    const MSTOFFSET = -6 * 60
     const DAY = new Date();
+    DAY.setMinutes( DAY.getMinutes() - MSTOFFSET)
     for (counter in collection) {
       const EVENTDAY = new Date(collection[counter].data.date);
-      console.log(EVENTDAY, DAY);
       if (EVENTDAY > DAY) {
         return collection[counter];
       }
@@ -101,7 +104,9 @@ module.exports = {
     return null;
   },
   getNextEvents(collection, limit = 4) {
+    const MSTOFFSET = -6 * 60
     const DAY = new Date();
+    DAY.setMinutes( DAY.getMinutes() - MSTOFFSET)
     const EVENTS = new Array();
     for (counter in collection) {
       const EVENTDAY = new Date(collection[counter].data.date);
@@ -175,7 +180,6 @@ module.exports = {
     const SPECIALDAYS = new Array();
     const DAYMAP = new Object();
     for (counter in collection) {
-      console.log(collection[counter].data.day);
       let day = collection[counter].data.day;
       DAYMAP[day] = weekday[day];
     }
@@ -185,7 +189,6 @@ module.exports = {
       }
       // weekday[counter]
     }
-    console.log(SPECIALDAYS);
     return SPECIALDAYS;
   },
 
