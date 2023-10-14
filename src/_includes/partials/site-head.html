@@ -126,18 +126,30 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
       id="physical"
     >
       <div class="flex flex-col justify-between gap-2 md:flex-row md:gap-8">
-        <a href="/location" class="block underline"
-          >{{ contactInfo.location }}</a
-        >
-        <p>{{ contactInfo.hours }}</p>
+        <div class=" flex gap-1">
+          {% include "partials/icons/map-pin.svg" %}
+          <a href="/location" class="block underline"
+            >{{ contactInfo.location }}</a
+          >
+        </div>
+        <div class="flex gap-1">
+          {% include "partials/icons/clock.svg" %}
+          <p>{{ contactInfo.hours }}</p>
+        </div>
       </div>
       <div class="flex flex-col justify-between gap-2 md:flex-row md:gap-8">
-        <a href="tel:{{ contactInfo.phone }}" class="block underline"
-          >{{ contactInfo.phone }}</a
-        >
-        <a href="mailto:{{ contactInfo.email }}" class="block underline"
-          >{{ contactInfo.email }}</a
-        >
+        <div class="flex gap-1">
+          {% include "partials/icons/phone.svg" %}
+          <a href="tel:{{ contactInfo.phone }}" class="block underline"
+            >{{ contactInfo.phone }}</a
+          >
+        </div>
+        <div class="flex gap-1">
+          {% include "partials/icons/mail.svg" %}
+          <a href="mailto:{{ contactInfo.email }}" class="block underline"
+            >{{ contactInfo.email }}</a
+          >
+        </div>
       </div>
     </div>
 
