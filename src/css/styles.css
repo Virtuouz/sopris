@@ -70,8 +70,11 @@ h4 {
 }
 
 /* Compositions */
+.flow-half > * + * {
+  margin-top: 8px;
+}
 .flow > * + * {
-  margin-top: 1rem;
+  margin-top: 16px;
 }
 
 .flow5 > * + * {

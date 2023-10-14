@@ -1,26 +1,19 @@
 ---
-title: "Eagles vs. Buccaneers Square Game 3"
-summary: "Experience Football Fever Like Never Before! At Sopris' Eagles vs. Buccaneers Square Game, you're not just watching the game – you're an active participant with a shot at winning big. Join us for an afternoon of football, fun, and the chance to turn your predictions into cash prizes!"
-category: "Football"
-date: "2023-10-23T19:00"
-img: ""
+title: "Tee Off in Style: Golf Masters Watch Party"
+summary: "Experience the Golf Masters like never before at [Your Restaurant Name]! Join us for an exciting day of golf, delicious food, and themed cocktails. We'll have the tournament on our giant screens, golf-themed cocktails and scrumptious bites, and contests with prizes!"
+category: "Golf"
+date: "2023-10-14T19:00"
+img: "src/images/event/golf.png"
 ---
-# How it Works
-At Sopris, our Eagles vs. Buccaneers Square Game is an exciting way to enjoy the game and possibly win big! Here's how it all works:
+## **Golf Masters Watch Party at Sopris**
+Join us for a hole-in-one of an experience as we bring the prestigious Golf Masters Tournament to [Your Restaurant Name]! If you're a golf enthusiast, this is the event you won't want to miss. Get ready to don your best golf attire, cheer for your favorite golfers, and enjoy a day of swings, sips, and scrumptious food.
 
-### **1. The Grid:** 
-We'll have a physical grid with the x-axis representing one team's points and the y-axis representing the other team's points. It's a unique twist that makes watching the game even more engaging.
+### **What's in Store for You:**
+* **A Golfer's Paradise:** Immerse yourself in the tournament's excitement with our giant screens and high-quality sound system, ensuring every swing and putt is crystal clear.
+* **Themed Drinks**: Sip on delicious golf-themed cocktails, like "The Hole in One," "Fairway Fizz," and "Mulligan Mule" specially crafted for this event.
+* **Culinary Masters:** Our chefs have prepared a mouthwatering menu of appetizers, entrees, and snacks inspired by the golfing world. From "Sand Trap Sliders" to "Birdie Bites," there's something for every palate.
+* **Prizes and Contests:** Participate in fun golf-related contests and trivia for a chance to win amazing prizes. Wear your favorite golf gear for a shot at the Best Dressed Golfer competition!
+* **Big Screens, Bigger Fun:** We've got multiple big screens throughout the venue to make sure you catch every swing, putt, and thrilling moment of the tournament.
 
-### **2. Predict the Scores:**
-Before the game begins, you can purchase a square on the grid. Each square is determined by predicting the final score of both teams. Your predicted scores for each team will serve as coordinate pairs, marking your square on the grid.
 
-### **3. Win Big:**
-To win, your square must be within 1 square (either up, down, left, right, or diagonally) of the real final score when the game ends. If your square matches the score exactly or is within 1 square, congratulations – you're a winner!
-
-### **4. The Prize:** 
-The prize pool is created from the entry fees of participants. If there are no winners, the prize money rolls over to the next Square Game, making the pot even more tempting.
-
-### **5. Entry Requirements:** 
-To play the square game, simply purchase a meal with a value of $12 or more. It's a delicious way to get in on the action while enjoying a satisfying dining experience at Sopris.
-
-So, come hungry, cheer for your team, and try your luck in our Eagles vs. Buccaneers Square Game. It's a fun and interactive way to enjoy the game while potentially scoring a tasty win!
+Join us for an unforgettable Golf Masters Watch Party at Sopris – where golf, good times, and great company come together!

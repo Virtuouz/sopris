@@ -1,9 +1,9 @@
 ---
 title: "Eagles vs. Buccaneers Square Game 2"
 summary: "Experience Football Fever Like Never Before! At Sopris' Eagles vs. Buccaneers Square Game, you're not just watching the game – you're an active participant with a shot at winning big. Join us for an afternoon of football, fun, and the chance to turn your predictions into cash prizes!"
-category: "Football"
+category: "Soccer"
 date: "2023-10-24T17:00"
-img: ""
+img: "src/images/event/soccer.png"
 ---
 # How it Works
 At Sopris, our Eagles vs. Buccaneers Square Game is an exciting way to enjoy the game and possibly win big! Here's how it all works:

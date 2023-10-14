@@ -1,14 +1,14 @@
 ---
-title: "Eagles vs. Buccaneers Square Game 4"
+title: "Worldcup Watch Party"
 summary: "Experience Football Fever Like Never Before! At Sopris' Eagles vs. Buccaneers Square Game, you're not just watching the game – you're an active participant with a shot at winning big. Join us for an afternoon of football, fun, and the chance to turn your predictions into cash prizes!"
-category: "Golf"
+category: "Soccer"
 date: "2023-10-22T05:00"
-img: ""
+img: "src/images/event/soccer.png"
 ---
-# How it Works
-At Sopris, our Eagles vs. Buccaneers Square Game is an exciting way to enjoy the game and possibly win big! Here's how it all works:
 
-### **1. The Grid:** 
+## **How it Works**
+At Sopris, our Eagles vs. Buccaneers Square Game is an exciting way to enjoy the game and possibly win big! Here's how it all works:
+### **1. The Grid:**  
 We'll have a physical grid with the x-axis representing one team's points and the y-axis representing the other team's points. It's a unique twist that makes watching the game even more engaging.
 
 ### **2. Predict the Scores:**

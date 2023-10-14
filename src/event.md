@@ -3,11 +3,12 @@ eleventyNavigation:
   key: Event
   order: 4
 title: "Event"
+isEvent: "Yes"
 layout: "layouts/event.html"
 permalink: "/event/index.html"
 backgroundImg: "/images/background/event.jpg"
 headline: "More Events Soon"
-subheadline: "We more events to come. Stay tuned!"
+subheadline: "More Events to Come. Stay tuned!"
 upcoming:
   headline: "Upcoming Events"
   subheadline: "More information on these events coming soon."

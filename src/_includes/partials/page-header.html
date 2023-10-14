@@ -4,6 +4,6 @@
     {{ pageHeaderTitle }}
   </h1>
   {% endif %} {% if pageHeaderSummary%}
-  <p class="text-subheadline">{{ pageHeaderSummary | safe }}</p>
+  <p class="text-subheadline {% if isEvent %} text-[22px] uppercase font-bold mt-7 {% endif %}">{{ pageHeaderSummary | safe }}</p>
   {% endif %}
 </div>

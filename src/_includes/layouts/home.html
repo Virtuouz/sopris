@@ -19,7 +19,7 @@ helpers.getTruncatedFaqSet(faq.items) %}
 {%include "partials/foods-top.html" %}
 
 <article class="mt-20">
-  <h2 class="text-[40px] text-center">{{ menu.headline }}</h2>
+  <h2 class="text-[40px] text-center font-semibold">{{ menu.headline }}</h2>
   <p class="text-lg text-center">{{ menu.subheadline }}</p>
   <div class="mt-28 flex gap-10 flex-wrap justify-around">
     {% for sections, section in menu.menusections %}
@@ -37,7 +37,7 @@ helpers.getTruncatedFaqSet(faq.items) %}
   {% for special in specialsList %} {% if special.data.day == helpers.getToday()
   %}
   <div class="flex flex-col items-center">
-    <h2 id="special" class="max-w-2xl text-center text-[40px]">Todays Weekly Special:<br><div>{{ special.data.title }}</div></h2>
+    <h2 id="special" class="max-w-2xl text-center text-[40px] font-semibold">Todays Weekly Special:<br><div>{{ special.data.title }}</div></h2>
     {% image special.data.img, "mt-[-25px]","","(max-width: 500px) 300px, (max-width: 700px) 500px, (max-width: 1000px) 675px", [300,500,675]%}
     <p>{{ special.data.summary }}</p>
     <a href="/menu/#Specials" class="link">See All Weekly Specials</a>
@@ -49,70 +49,76 @@ helpers.getTruncatedFaqSet(faq.items) %}
 <article class="flex flex-col items-center mt-80 relative">
   <div class="cs-menucta bg-[url(/images/background/menu.png)] h-48 w-48  md:h-96 md:w-96 absolute bg-contain bg-no-repeat -rotate-[24deg] -top-[-10%] left-[10%] sm:-top-[-10%] sm:left-[20%] md:-top-[40%] md:left-[25%] -z-10
   "></div>
-  <h2 class="text-[40px] text-center">{{ menucta.headlinep1 }} <br> <div>{{ menucta.headlinep2 }}</div></h2>
+  <h2 class="text-[40px] text-center font-semibold">{{ menucta.headlinep1 }} <br> <div>{{ menucta.headlinep2 }}</div></h2>
   <p class="mt-6 mb-7">{{ menucta.subheadline }}</p>
   {% include "partials/cta-button.html" %}
 </article>
 
-<article class="mt-72 flex flex-col items-center">
-  <h2 class="text-center text-[40px] ">{{ benefits.headline }}</h2>
+<article class="mt-72 flex flex-col items-center mb-40">
+  <h2 class="text-center text-[40px] font-semibold">{{ benefits.headline }}</h2>
   <div class="mt-12 flex gap-14 flex-wrap-reverse justify-around">
     {% for benefits, benefititem in benefits.benefitlist %}
-    <div class="p-4 max-w-[250px] h-[300px] flex flex-col items-center rounded flex-1 min-w-[175px] {% if benefititem.center %} bg-[#252626] max-[715px]:order-2 max-[437px]:order-[0] {% else %} bg-[#151616] {% endif %}">
+    <div class="p-4 max-w-[250px] h-[300px] flex flex-col items-center rounded flex-1 min-w-[175px] {% if benefititem.center %} bg-[#252626] max-[716px]:order-2 max-[437px]:order-[0] {% else %} bg-[#151616] {% endif %}">
       <div class="w-[60px] h-[60px]">{% include benefititem.icon %}</div>
-      <h3 class="text-xl">{{ benefititem.headline }}</h3>
+      <h3 class="text-xl font-semibold">{{ benefititem.headline }}</h3>
       <p>{{ benefititem.desc }}</p>
     </div>
     {% endfor %}
   </div>
 </article>
 
-<article class="max-w-md">
-  <h1 class="text-[2.5rem]">Upcoming Event</h1>
-  {% if nextEvent %} {% for day, hours, minutes, month, dayNum in dateInfo %}
-  <p class="font-bold uppercase text-lime-600">
-    {{nextEvent.data.category}} – {{ day }} {{ hours }}:{{ minutes }} – {{ month
-    }} {{ dayNum }}
-  </p>
-  {% endfor %}
-  <h2>{{ nextEvent.data.title }}</h2>
-  <p>{{ nextEvent.data.summary }}</p>
-  <a
-    href="/event"
-    class="mr-3 rounded bg-sopris-mutedgreen px-2 py-1 text-center text-sm font-medium uppercase text-white hover:bg-lime-600 focus:outline-none focus:ring-4 focus:ring-blue-300 md:mr-0"
-    >Learn More</a
-  >
-  {# {% for event in nextEvents %}
-  <h1>{{ event.data.title }}</h1>
-  {% endfor %} #} {% else %}
-  <p class="text-xl">More information coming soon</p>
-  {% endif %}
+<div class="cs-hp-event absolute bg-scroll lg:bg-fixed left-2/4 right-2/4 -z-10 mx-[-50vw] {% if nextEvent %} h-[500px] {% else %} h-[160px] {% endif %} w-screen bg-[url(/images/background/interior.jpg)] bg-cover bg-right bg-no-repeat
+before:bg-[radial-gradient(50%_50%_at_50%_50%,_#000_0%,_rgba(0,0,0,0.3)_100%)] before:absolute before:w-full before:h-full"></div>
+
+<article class="flex justify-center items-center {% if nextEvent %} h-[500px] {% else %} h-[160px] {% endif %} mt-7">
+  <div class="max-w-[550px] flex flex-col items-center">
+    <h1 class="text-[40px] font-semibold text-center mb-8">Upcoming Event</h1>
+    {% if nextEvent %} {% for day, hours, minutes, month, dayNum in dateInfo %}
+    <div>
+      <p class="font-bold uppercase text-sopris-green text-xs">
+        {{nextEvent.data.category}} – {{ day }} {{ hours }}:{{ minutes }} – {{ month
+        }} {{ dayNum }}
+      </p>
+      {% endfor %}
+      <h2 class="text-[32px] -mt-3 mb-4">{{ nextEvent.data.title }}</h2>
+      <p>{{ nextEvent.data.summary }}</p>
+    </div>
+    <a
+      href="/event"
+      class="mr-3 w-max mt-7 rounded bg-sopris-mutedgreen px-2 py-1 text-center text-sm font-medium uppercase text-white hover:bg-lime-600 focus:outline-none focus:ring-4 focus:ring-blue-300 md:mr-0"
+      >Learn More</a
+    >
+    {# {% for event in nextEvents %}
+    <h1>{{ event.data.title }}</h1>
+    {% endfor %} #} {% else %}
+    <p class="text-xl text-center">More information coming soon</p>
+    {% endif %}
+  </div>
 </article>
 
-<article>
-  <h2>{{ about.headline }}</h2>
-  <div>{{content | safe}}</div>
+<article class="mb-52 mt-52">
+  <div class="flex justify-around max-[1100px]:flex-wrap-reverse self ">
+    <div class="max-w-[550px] min-w-[300px]">
+      <h2 class="text-[40px] font-semibold">{{ about.headline }}</h2>
+      <div class="flow">{{content | safe}}</div>
+    </div>
+    {% image about.img, "self-center min-w-[300px]","","(max-width: 500px) 300px, (max-width: 700px) 500px, (max-width: 1000px) 600px", [300,400,600]%}
+  </div>
 </article>
 
-<article>
-  <ul>
-    {% for question in faqSet.faqSet %}
-    <li>
-      <h2>{{ question.name }}</h2>
-      <p>{{ question.desc }}</p>
-    </li>
-    {% endfor %}
-  </ul>
-  <a href="/faq" class="link">See All FAQ</a>
+<article class="flex flex-col items-center">
+  <h2 class="text-[40px] text-center font-semibold mb-12">FAQ</h2>
+  <div class="flex flex-col max-w-xl">
+    <ul >
+      {% for question in faqSet.faqSet %}
+      <li class="py-7  border-y border-opacity-50 border-white ">
+        <h2 class="text-lg font-semibold mb-3">{{ question.name }}</h2>
+        <p class="text-base">{{ question.desc }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="/faq" class="link self-end mt-7">See All FAQ</a>
+  </div>
 </article>
 
-<article>
-  <p>{{ specialsList.tags }}</p>
-  {% for tag in specialsList.data.tags %}
-  <p>{{ tag }}</p>
-  {% endfor %}
-</article>
-
-{#
-<article>{% include "partials/contact-form.html" %}</article>
-#} {% endblock %}
+{% endblock %}

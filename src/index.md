@@ -55,8 +55,10 @@ benefits:
       headline: "A Familiar Experience"
       desc: "Sopris offers more than just a meal; it provides a warm and welcoming ambiance that makes you feel right at home."
       icon: "partials/icons/chair.svg"
+eventimg: "/images/background/interior.jpg"
 about:
   headline: "About Sopris"
+  img: "src/images/background/about.png"
 ---
 
 At Sopris, our story is a tale of passion, family, and a dream brought to life. The name 'Sopris' is a fusion of my daughters' names, Sophie and Iris, symbolizing the heart and soul of our establishment.
