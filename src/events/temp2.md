@@ -1,12 +1,12 @@
 ---
 title: "Tee Off in Style: Golf Masters Watch Party"
-summary: "Experience the Golf Masters like never before at [Your Restaurant Name]! Join us for an exciting day of golf, delicious food, and themed cocktails. We'll have the tournament on our giant screens, golf-themed cocktails and scrumptious bites, and contests with prizes!"
+summary: "Experience the Golf Masters like never before at Sopris! Join us for an exciting day of golf, delicious food, and themed cocktails. We'll have the tournament on our giant screens, golf-themed cocktails and scrumptious bites, and contests with prizes!"
 category: "Golf"
 date: "2023-10-14T19:00"
 img: "src/images/event/golf.png"
 ---
 ## **Golf Masters Watch Party at Sopris**
-Join us for a hole-in-one of an experience as we bring the prestigious Golf Masters Tournament to [Your Restaurant Name]! If you're a golf enthusiast, this is the event you won't want to miss. Get ready to don your best golf attire, cheer for your favorite golfers, and enjoy a day of swings, sips, and scrumptious food.
+Join us for a hole-in-one of an experience as we bring the prestigious Golf Masters Tournament to Sopris! If you're a golf enthusiast, this is the event you won't want to miss. Get ready to don your best golf attire, cheer for your favorite golfers, and enjoy a day of swings, sips, and scrumptious food.
 
 ### **What's in Store for You:**
 * **A Golfer's Paradise:** Immerse yourself in the tournament's excitement with our giant screens and high-quality sound system, ensuring every swing and putt is crystal clear.
