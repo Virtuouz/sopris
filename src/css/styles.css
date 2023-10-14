@@ -4,19 +4,20 @@
 
 @layer components {
   .link {
-    @apply text-lime-600 text-sopris-green underline decoration-2 underline-offset-4;
+    @apply text-sopris-green underline decoration-2 underline-offset-4 transition-colors hover:text-lime-600;
   }
   .cs-foods-top {
-    @apply left-2/4 -z-10 right-2/4 mx-[-50vw] w-screen bg-[url(/images/svg/Foods-Top.svg)] bg-cover bg-no-repeat;
+    @apply left-2/4 right-2/4 -z-10 mx-[-50vw] w-screen bg-[url(/images/svg/Foods-Top.svg)] bg-cover bg-no-repeat;
   }
 }
 
 /* Globals */
 
 @font-face {
-  font-family: 'fira_sansregular';
-  src: url('/fonts/firasans-regular-webfont.woff2') format('woff2'),
-       url('/fonts/firasans-regular-webfont.woff') format('woff');
+  font-family: "fira_sansregular";
+  src:
+    url("/fonts/firasans-regular-webfont.woff2") format("woff2"),
+    url("/fonts/firasans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -49,7 +50,7 @@ main {
   margin: var(--nav-margin) 0 0 0;
 }
 
-body{
+body {
   font-family: "fira_sansregular", sans-serif;
 }
 

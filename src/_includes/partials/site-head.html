@@ -3,7 +3,7 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
 -%} {% if entry.title == "Blog" %} {% if collections.blog.length %}
 <li>
   <a
-    class="data-[state=active]:link block rounded py-2 pl-3 pr-4 uppercase text-white hover:bg-gray-700 hover:text-sopris-green dark:border-gray-700 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+    class="data-[state=active]:link block rounded transition-colors py-2 pl-3 pr-4 uppercase text-white hover:bg-gray-700 hover:text-sopris-green dark:border-gray-700 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
     href="{{ entry.url }}"
     {{
     helpers.getLinkActiveState(entry.url,
@@ -16,7 +16,7 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
 {% endif %} {% elif entry.title == "Event" %} {% if futureEvents ==true %}
 <li>
   <a
-    class="data-[state=active]:link block rounded py-2 pl-3 pr-4 uppercase text-white hover:bg-gray-700 hover:text-sopris-green dark:border-gray-700 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+    class="data-[state=active]:link block rounded transition-colors py-2 pl-3 pr-4 uppercase text-white hover:bg-gray-700 hover:text-sopris-green dark:border-gray-700 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
     href="{{ entry.url }}"
     {{
     helpers.getLinkActiveState(entry.url,
@@ -29,7 +29,7 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
 {% endif %} {% else %}
 <li>
   <a
-    class="data-[state=active]:link block rounded py-2 pl-3 pr-4 uppercase text-white hover:bg-gray-700 hover:text-sopris-green dark:border-gray-700 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+    class="data-[state=active]:link block rounded transition-colors py-2 pl-3 pr-4 uppercase text-white hover:bg-gray-700 hover:text-sopris-green dark:border-gray-700 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
     href="{{ entry.url }}"
     {{
     helpers.getLinkActiveState(entry.url,
