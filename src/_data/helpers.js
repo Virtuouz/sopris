@@ -78,7 +78,7 @@ module.exports = {
     return weekday[DAY.getDay()]
   },
   futureEvents(collection){
-    const MSTOFFSET = 6 * 60
+    const MSTOFFSET = -6 * 60
     const DAY = new Date();
     for (counter in collection) {
       const EVENTDAY = new Date(collection[counter].data.date);
@@ -92,7 +92,7 @@ module.exports = {
     return false;
   },
   getNextEvent(collection) {
-    const MSTOFFSET = 6 * 60
+    const MSTOFFSET = -6 * 60
     const DAY = new Date();
     for (counter in collection) {
       const EVENTDAY = new Date(collection[counter].data.date);
@@ -104,7 +104,7 @@ module.exports = {
     return null;
   },
   getNextEvents(collection, limit = 4) {
-    const MSTOFFSET = 6 * 60
+    const MSTOFFSET = -6 * 60
     const DAY = new Date();
     const EVENTS = new Array();
     for (counter in collection) {
