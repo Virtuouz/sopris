@@ -78,11 +78,11 @@ module.exports = {
     return weekday[DAY.getDay()]
   },
   futureEvents(collection){
-    const MSTOFFSET = -6 * 60
+    const MSTOFFSET = 6 * 60
     const DAY = new Date();
-    DAY.setMinutes( DAY.getMinutes() - MSTOFFSET)
     for (counter in collection) {
       const EVENTDAY = new Date(collection[counter].data.date);
+      EVENTDAY.setMinutes( EVENTDAY.getMinutes() - MSTOFFSET)
       console.log("Current time: "+DAY+" Event Time: "+EVENTDAY)
       
       if (EVENTDAY > DAY) {
@@ -92,11 +92,11 @@ module.exports = {
     return false;
   },
   getNextEvent(collection) {
-    const MSTOFFSET = -6 * 60
+    const MSTOFFSET = 6 * 60
     const DAY = new Date();
-    DAY.setMinutes( DAY.getMinutes() - MSTOFFSET)
     for (counter in collection) {
       const EVENTDAY = new Date(collection[counter].data.date);
+      EVENTDAY.setMinutes( EVENTDAY.getMinutes() - MSTOFFSET)
       if (EVENTDAY > DAY) {
         return collection[counter];
       }
@@ -104,12 +104,12 @@ module.exports = {
     return null;
   },
   getNextEvents(collection, limit = 4) {
-    const MSTOFFSET = -6 * 60
+    const MSTOFFSET = 6 * 60
     const DAY = new Date();
-    DAY.setMinutes( DAY.getMinutes() - MSTOFFSET)
     const EVENTS = new Array();
     for (counter in collection) {
       const EVENTDAY = new Date(collection[counter].data.date);
+      EVENTDAY.setMinutes( EVENTDAY.getMinutes() - MSTOFFSET)
       if (EVENTDAY > DAY) {
         EVENTS.push(collection[counter]);
       }
