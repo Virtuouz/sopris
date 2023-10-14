@@ -12,7 +12,7 @@ on loaded
 log $isFocused
 if $isFocused is 0 add .link  to first <button/> in me"
 >
-  <h2 class="text-center mt-24 mb-12 text-[40px]">{{ mainMenu.headline }}</h2>
+  <h2 class="text-center mt-24 mb-12 text-[40px] font-semibold">{{ mainMenu.headline }}</h2>
   {% if categories %}
   <div class="flex justify-center mb-10 py-6 border-b border-t border-white/40">
     <div class="relative m-[1em] max-w-3xl overflow-hidden ">
@@ -73,7 +73,7 @@ on loaded
 log $isFocusedSpecial
 if $isFocusedSpecial is 0 add .link to first <button/> in me"
 >
-  <h2 id="Specials" class="text-center text-[40px] mt-36 mb-4">{{ specialMenu.headline }}</h2>
+  <h2 id="Specials" class="text-center text-[40px] mt-36 mb-4 font-semibold">{{ specialMenu.headline }}</h2>
   <p class="text-center">{{ specialMenu.subheadline }}</p>
 
   {% if SpecialDays %}
@@ -117,10 +117,13 @@ if $isFocusedSpecial is 0 add .link to first <button/> in me"
         on loaded if $isFocusedSpecial is 0 remove .hidden from next <div/>"
   ></div>
   {% for day, category in SpecialDays%}
-  <div class="categoriesSpecial {{category}} hidden">
+  <div class="categoriesSpecial {{category}} hidden  flex justify-around max-[1100px]:flex-wrap-reverse">
     {% for special in collections.specials %} {% if special.data.day == day%}
-    <h2 class="text-[40px]" >{{ special.data.title}}</h2>
-    <p>{{special.content | safe }}</p>
+    <div class="max-w-[500px]">
+      <h2 class="text-[40px]" >{{ special.data.title}}</h2>
+      <p>{{special.content | safe }}</p>
+    </div>
+    {% image special.data.img, "self-center min-w-[300px] ","","(max-width: 500px) 300px, (max-width: 700px) 500px, (max-width: 1000px) 675px", [300,500,675]%}
     {% endif %} {% endfor %}
   </div>
   {% endfor %} {% endif %}

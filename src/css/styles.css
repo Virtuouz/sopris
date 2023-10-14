@@ -14,24 +14,11 @@
 /* Globals */
 
 @font-face {
-  font-family: "rajdhani";
-  src:
-    url("/fonts/rajdhani-regular-webfont.woff") format("woff"),
-    url("/fonts/rajdhani-regular-webfont.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "rubik";
-  src:
-    url("/fonts/rubik-variablefont_wght-webfont.woff") format("woff"),
-    url("/fonts/rubik-variablefont_wght-webfont.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "ibmplexsans";
-  src:
-    url("/fonts/ibmplexsans-regular-webfont.woff") format("woff"),
-    url("/fonts/ibmplexsans-regular-webfont.woff2") format("woff2");
+  font-family: 'fira_sansregular';
+  src: url('/fonts/firasans-regular-webfont.woff2') format('woff2'),
+       url('/fonts/firasans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -60,6 +47,10 @@ body {
 
 main {
   margin: var(--nav-margin) 0 0 0;
+}
+
+body{
+  font-family: "fira_sansregular", sans-serif;
 }
 
 h1,
