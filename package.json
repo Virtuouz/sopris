@@ -6,7 +6,8 @@
   "scripts": {
     "start": "concurrently --kill-others  \"npx tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css --watch\" \"npx eleventy --serve\"",
     "eleventy": "npx tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css && npx eleventy",
-    "tailwind": "npx tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css --watch",
+    "unlighthouse": "unlighthouse-ci --site beta.vynxlabs.com --build-static"
   },
   "keywords": [],
   "author": "",
