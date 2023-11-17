@@ -14,7 +14,7 @@
 /* Globals */
 
 @font-face {
-  font-family: "fira_sansregular";
+  font-family: "fira-sansregular";
   src:
     url("/fonts/firasans-regular-webfont.woff2") format("woff2"),
     url("/fonts/firasans-regular-webfont.woff") format("woff");
@@ -51,8 +51,12 @@ main {
 }
 
 body {
-  font-family: "fira_sansregular", sans-serif;
+  font-family: "fira-sansregular", sans-serif;
+  
+  /* This fixes fi and fl not rendering because of the font. */
+  letter-spacing: 1px; 
 }
+
 
 h1,
 h2,
