@@ -1,5 +1,5 @@
 ---
-title: "Burrito"
+title: "Street Burritos"
 price: "$14.00"
 category: "Mexican-Cuisine"
 img: "src/images/menu/burrito.jpg"
