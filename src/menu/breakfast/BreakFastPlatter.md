@@ -1,5 +1,5 @@
 ---
-title: "Breatfast Platter"
+title: "Breakfast Platter"
 price: "$10.00"
 category: "Breakfast"
 img: "src/images/menu/Breakfast-Platter.png"

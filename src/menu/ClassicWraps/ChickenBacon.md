@@ -1,5 +1,5 @@
 ---
-title: "Chicken Bacon Rance Wrap"
+title: "Chicken Bacon Ranch Wrap"
 price: "$12.00"
 category: "Classic-Wraps"
 img: ""
