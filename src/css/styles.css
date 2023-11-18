@@ -7,7 +7,7 @@
     @apply text-sopris-green underline decoration-2 underline-offset-4 transition-colors hover:text-lime-600;
   }
   .cs-foods-top {
-    @apply left-2/4 right-2/4 -z-10 mx-[-50vw] w-screen bg-[url(/images/svg/Foods-Top.svg)] bg-cover bg-no-repeat;
+    @apply left-2/4 right-2/4 -z-20 mx-[-50vw] w-screen bg-[url(/images/svg/Foods-Top.svg)] bg-cover bg-no-repeat;
   }
 }
 
@@ -52,7 +52,7 @@ main {
 
 body {
   font-family: "fira-sansregular", sans-serif;
-  
+
   /* This fixes fi and fl not rendering because of the font. */
   letter-spacing: 1px; 
 }
