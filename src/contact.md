@@ -1,4 +1,5 @@
 ---
+tags: "page"
 eleventyNavigation:
     key: Contact
     order: 5

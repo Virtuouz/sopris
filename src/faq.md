@@ -1,4 +1,5 @@
 ---
+tags: "page"
 eleventyNavigation:
   key: Faq
   order: 2

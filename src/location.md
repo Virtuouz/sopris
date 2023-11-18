@@ -1,4 +1,5 @@
 ---
+tags: "page"
 eleventyNavigation:
     key: Location
     order: 3

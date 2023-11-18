@@ -1,4 +1,5 @@
 ---
+tags: "page"
 eleventyNavigation:
     key: Menu
     order: 3

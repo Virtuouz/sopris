@@ -1,4 +1,5 @@
 ---
+tags: "page"
 eleventyNavigation:
   key: Home
   order: 1

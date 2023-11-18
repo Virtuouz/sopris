@@ -1,4 +1,5 @@
 ---
+tags: "page"
 eleventyNavigation:
   key: Event
   order: 4
