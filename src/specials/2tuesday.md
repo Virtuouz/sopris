@@ -1,8 +1,8 @@
 ---
 title: "Taco Tuesday"
-summary: "All Tacos 50% off! - Placeholder"
+summary: "Spice up your Tuesdays at Sopris with Taco Tuesday, where we offer an expanded variety of tacos and Mexican cuisines, including mouthwatering options like the Chile Verde Burrito."
 day: 2
 img: "src/images/special/Taco-Tuesday.png"
 description: ""
 ---
-Join us every Tuesday for the ultimate taco extravaganza! It's your chance to savor the flavors of our delicious tacos at an unbeatable price. Purchase any 6 tacos and enjoy a whopping 50% off your entire taco feast. Taco Tuesday at Sopris is the perfect way to spice up your week without breaking the bank. Don't miss out on this unbeatable deal – come hungry, leave happy!
+Indulge in a fiesta of flavors every Tuesday at Sopris with our tantalizing Taco Tuesday special! We've curated an expanded selection of tacos and Mexican delights, including mouthwatering options like the Chile Verde Burrito. From classic favorites to innovative creations, our Taco Tuesday is a celebration of the vibrant and diverse tastes of Mexican cuisine. Join us for a flavorful journey that turns an ordinary Tuesday into a culinary adventure at Sopris.
