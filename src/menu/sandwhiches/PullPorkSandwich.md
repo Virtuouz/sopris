@@ -1,7 +1,7 @@
 ---
-title: "Original Beef Eater"
+title: "Pull Pork Sandwich"
 price: "$13.00"
 category: "Sandwiches"
-img: "src/images/menu/burrito.jpg"
-desc: "Fried roast beef topped with lettuc, tomato, melted cheddar, and swiss cheese on french bread with Jalapeno spread"
+img: ""
+desc: "Roast tender BBQ pulled pork topped with cole slaw on a homemade roll"
 ---

@@ -58,8 +58,10 @@ if $isFocused is 0 add .link  to first <button/> in me"
     <li
       class="h-30 flex min-w-min max-w-xl flex-shrink flex-grow basis-[450px] gap-4"
     >
+    {% if menuItem.data.img %}
       {% image menuItem.data.img, "rounded border-white border min-w-[125px]
       sm:min-w-[150px]","","(max-width: 400px) 400px", [150]%}
+      {% endif %}
       <div class="flex-shrink flex-grow">
         <div class="flex justify-between gap-2">
           <h4 class="text-xl font-semibold">{{ menuItem.data.title }}</h4>
