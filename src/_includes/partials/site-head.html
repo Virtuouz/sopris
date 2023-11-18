@@ -98,12 +98,19 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
         _="
     on click toggle .hidden on #navbar-sticky
     toggle .hidden on #physical
+    toggle .hidden on .logic-x
+    toggle .hidden on .logic-hamburger
     toggle .h-20 on the first <nav/> end
+
     "
       >
         <span class="sr-only">Open main menu</span>
+        <svg class="hidden logic-x" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+          <path d="M18.3711 6L6.37109 18" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6.37109 6L18.3711 18" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         <svg
-          class="h-5 w-5"
+          class="h-5 w-5 logic-hamburger"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
