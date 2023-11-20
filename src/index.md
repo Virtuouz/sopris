@@ -59,7 +59,7 @@ benefits:
 eventimg: "/images/background/interior.jpg"
 about:
   headline: "About Sopris"
-  img: "src/images/background/about.png"
+  img: ""
 ---
 
 At Sopris, our story is a tale of passion, family, and a dream brought to life. The name 'Sopris' is a fusion of my daughters' names, Sophie and Iris, symbolizing the heart and soul of our establishment.
