@@ -62,7 +62,7 @@ before:bg-[radial-gradient(50%_50%_at_50%_50%,_#000_0%,_rgba(0,0,0,0.3)_100%)] b
   </div>
 </article>
 
-<article class="mt-36">
+{# <article class="mt-36">
   {% for special in specialsList %} {% if special.data.day == helpers.getToday()
   %}
   <div class="flex flex-col items-center">
@@ -72,7 +72,7 @@ before:bg-[radial-gradient(50%_50%_at_50%_50%,_#000_0%,_rgba(0,0,0,0.3)_100%)] b
     <a href="/menu/#Specials" class="link">See All Weekly Dinners</a>
   </div>
   {% endif %} {%endfor%}
-</article>
+</article> #}
 
 {# -top-[100px] left-[350px] #}
 <article class="flex flex-col items-center mt-80 relative">
@@ -104,7 +104,9 @@ before:bg-[radial-gradient(50%_50%_at_50%_50%,_#000_0%,_rgba(0,0,0,0.3)_100%)] b
       <h2 class="text-[40px] font-semibold">{{ about.headline }}</h2>
       <div class="flow">{{content | safe}}</div>
     </div>
+    {% if about.img %}
     {% image about.img, "self-center min-w-[300px]","","(max-width: 500px) 300px, (max-width: 700px) 500px, (max-width: 1000px) 600px", [300,400,600]%}
+    {% endif %}
   </div>
 </article>
 
