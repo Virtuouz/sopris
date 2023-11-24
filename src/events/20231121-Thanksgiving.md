@@ -2,7 +2,7 @@
 title: "SOPRIS is Celebrating Thanksgiving"
 summary: "Join us at sopris to celebrate Thanksgiving with a slow-roasted carved turkey dinner or a delicious 12oz prime rib steak dinner!"
 category: "Holiday"
-date: "2023-11-23T11:00"
+date: "2023-11-23T18:00"
 img: "src/images/event/Jackpot-Nevada-Restaurant-Thanksgiving-Sopris.png"
 ---
 ## **You're Invited to Celebrate Thanksgiving at SOPRIS!**
