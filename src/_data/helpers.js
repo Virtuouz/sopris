@@ -79,7 +79,7 @@ module.exports = {
   },
   futureEvents(collection){
     const MSTOFFSET = -6 * 60
-    const DAY = new Date().setMinutes(new Date().getMinutes() - MSTOFFSET);
+    const DAY = new Date();
     for (counter in collection) {
       const EVENTDAY = new Date(collection[counter].data.date);
       EVENTDAY.setMinutes( EVENTDAY.getMinutes() - MSTOFFSET)
@@ -93,7 +93,7 @@ module.exports = {
   },
   getNextEvent(collection) {
     const MSTOFFSET = -6 * 60
-    const DAY = new Date().setMinutes(new Date().getMinutes() - MSTOFFSET);
+    const DAY = new Date();
     for (counter in collection) {
       const EVENTDAY = new Date(collection[counter].data.date);
       EVENTDAY.setMinutes( EVENTDAY.getMinutes() - MSTOFFSET)
@@ -105,7 +105,7 @@ module.exports = {
   },
   getNextEvents(collection, limit = 4) {
     const MSTOFFSET = -6 * 60
-    const DAY = new Date().setMinutes(new Date().getMinutes() - MSTOFFSET);
+    const DAY = new Date();
     const EVENTS = new Array();
     for (counter in collection) {
       const EVENTDAY = new Date(collection[counter].data.date);
