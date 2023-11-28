@@ -30,7 +30,7 @@ if $isFocused is 0 add .link  to first <button/> in me"
               _="
                             on load if my innerHTML contains '-' call removeDash('{{ category }}') else return {{ category }} end
                             then put it into my innerHTML  end
-                            on focus remove .link from .menu-categories
+                            on click or focus remove .link from .menu-categories
                             add .link to me
                             add .hidden to .categories
                             remove .hidden from .{{category}}
@@ -111,7 +111,7 @@ if $isFocusedSpecial is 0 add .link to first <button/> in me"
               _="
                             on load if my innerHTML contains '-' call removeDash('{{ category }}') else return {{ category }} end
                             then put it into my innerHTML  end
-                            on focus remove .link from .menu-categories-special
+                            on click or focus remove .link from .menu-categories-special
                             add .link to me
                             add .hidden to .categoriesSpecial
                             remove .hidden from .{{category}}
