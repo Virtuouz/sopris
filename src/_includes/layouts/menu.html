@@ -26,7 +26,7 @@ if $isFocused is 0 add .link  to first <button/> in me"
           <h3>
             <button
               id="{{category}}"
-              class="menu-categories font-bold transition-colors hover:text-lime-600"
+              class="menu-categories font-bold transition-colors hover:text-lime-600 z-20"
               _="
                             on load if my innerHTML contains '-' call removeDash('{{ category }}') else return {{ category }} end
                             then put it into my innerHTML  end
@@ -107,7 +107,7 @@ if $isFocusedSpecial is 0 add .link to first <button/> in me"
           <h3>
             <button
               id="{{category}}"
-              class="menu-categories-special font-bold transition-colors hover:text-lime-600"
+              class="menu-categories-special font-bold transition-colors hover:text-lime-600 z-20"
               _="
                             on load if my innerHTML contains '-' call removeDash('{{ category }}') else return {{ category }} end
                             then put it into my innerHTML  end
