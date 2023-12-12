@@ -19,7 +19,7 @@ const authTokenNetlify = process.env.NETLIFY_TOKEN;
 const authTokenGrist = process.env.GRIST_TOKEN;
 const headers = { headers: { Authorization: `Bearer ${authTokenNetlify}` } };
 
-const handler = schedule("* * * * *", async () => {
+const handler = schedule("0 * * * *", async () => {
   const analyticsToPull = [
     ["HourlyPageViews", pageViews],
     ["HourlyUniqueVisitors", uniqueVisitors],
