@@ -5,6 +5,9 @@ category: "Holiday"
 date: "2023-12-25T16:00"
 img: "src/images/event/Jackpot-Nevada-Restaurant-Christmas-Buffet.png"
 ---
+## **Closing Early on Christmas Eve** 
+Join us for a cozy Christmas Eve at Sopris before close early at 8pm, allowing our team to spend time with their loved ones. We appreciate your understanding and look forward to welcoming you back for more memorable moments in the future. On Christmas Day, we'll open our doors late at 4pm, offering a buffet all day long. Celebrate the season with us as we serve up a feast to remember!
+
 ## **Join us for a buffet on Christmas day!**
 Make this Christmas Day truly extraordinary at Sopris, where we're spreading holiday cheer with a sumptuous buffet experience like no other! Starting at 4 pm, and ending at 10pm, join us for a festive feast that's sure to ignite your taste buds and warm your hearts.
 
