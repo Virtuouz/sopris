@@ -4,7 +4,7 @@ const axios = require("axios");
 const { GristDocAPI } = require("grist-api");
 
 const siteID = "d7ef9b0e-0df2-48fb-a8a1-dedb43206576";
-const DOC_URL = "https://vynxlabs.getgrist.com/omgUjknAvkc2/Sopris";
+const DOC_URL = "https://grist.vynxlabs.dev/rr18tFHCZN5E";
 
 const now = Date.now();
 //always has to be an even amount of hours greater than 0
