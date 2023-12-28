@@ -1,6 +1,6 @@
 ---
 title: "New Years Monday Morning Breakfast Buffet"
-summary: "Start your day with our Sunday morning breakfast buffet, indulge in our Prime Rib and Crab Legs Buffet in the evening, and extend the celebration into Monday morning with another breakfast buffet. Plus, on New Year's Eve, join us in the casino for an electrifying party. It's the perfect way to ring in 2024 with style, thrills, and delectable flavors at Sopris!"
+summary: "After a night of celebration at our New Year's Eve Casino Party, recharge your spirits with our Monday morning breakfast buffet from 9 am to 1 pm. Savor a hearty breakfast spread, perfect for starting your day off right."
 category: "Holiday"
 date: "2024-01-01T09:00"
 img: "src/images/event/new-year-breakfast-buffet-nevada-restaurant.png"
@@ -9,7 +9,7 @@ img: "src/images/event/new-year-breakfast-buffet-nevada-restaurant.png"
 ### **9am - 1pm: $23 per person**
 After a night of festive celebration at our New Year's Eve Casino Party, there's no better way to kickstart your day than with our Monday morning breakfast buffet. Join us from 9 am to 1 pm for a delightful spread that promises to rejuvenate your spirits.
 
-Whether you're craving fluffy pancakes, sizzling bacon, made-to-order omelets, or a fresh selection of pastries and fruits, our breakfast buffet has something to satisfy every palate. It's a hearty and comforting way to refuel after an evening of excitement.
+Whether you're craving fluffy pancakes, sizzling bacon, made-to-order omelets, or a fresh selection of fruits, our breakfast buffet has something to satisfy every palate. It's a hearty and comforting way to refuel after an evening of excitement.
 
 Relax in our warm and welcoming ambiance, sip on freshly brewed coffee, and savor the flavors of a delicious morning meal. Our breakfast buffet is designed to help you recharge, ensuring you're ready to embrace the new day with energy and enthusiasm.
 

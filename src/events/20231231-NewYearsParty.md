@@ -15,7 +15,7 @@ Sunday night comes alive with our exquisite Prime Rib and Crab Legs Buffet. Trea
 
 ## **New Year's Eve Casino Party**
 ### **5pm - Midnight**
-Join us in the casino for an electrifying New Year's Eve party! From 5 pm to midnight, enjoy gaming excitement, live entertainment, and a lively atmosphere as we count down to the new year. Plus, don't miss your chance to participate in the thrilling Money Storm, where cash prizes and exciting giveaways await lucky winners. It's the perfect way to ring in 2024 with style, thrills, and the opportunity to win big!
+Join us in the casino for an electrifying New Year's Eve party! From 5 pm to midnight, enjoy gaming excitement, and a lively atmosphere as we count down to the new year. Plus, don't miss your chance to participate in the thrilling Money Storm, where cash prizes and exciting giveaways await lucky winners. It's the perfect way to ring in 2024 with style, thrills, and the opportunity to win big!
 
 ## **Monday Morning Breakfast Buffet** 
 ### **9am - 1pm: $23 per person**
