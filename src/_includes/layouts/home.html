@@ -16,10 +16,10 @@ helpers.getTruncatedFaqSet(faq.items) %}
   {% include "partials/cta-button.html" %}
 </article>
 
-<div class="cs-hp-event absolute bg-scroll lg:bg-fixed left-2/4 right-2/4 -z-10 mx-[-50vw] {% if nextEvent %} h-[500px] {% else %} h-[220px] {% endif %} w-screen bg-[url(/images/background/interior.jpg)] bg-cover bg-right bg-no-repeat
+<div class="cs-hp-event absolute bg-scroll lg:bg-fixed left-2/4 right-2/4 -z-10 mx-[-50vw] {% if nextEvent %} h-[600px] {% else %} h-[220px] {% endif %} w-screen bg-[url(/images/background/interior.jpg)] bg-cover bg-right bg-no-repeat
 before:bg-[radial-gradient(50%_50%_at_50%_50%,_#000_0%,_rgba(0,0,0,0.3)_100%)] before:absolute before:w-full before:h-full"></div>
 
-<article class="flex justify-center items-center {% if nextEvent %} h-[500px] {% else %} h-[160px] {% endif %} mt-7">
+<article class="flex justify-center items-center {% if nextEvent %} h-[500px] {% else %} h-[160px] {% endif %} mt-8">
   <div class="max-w-[550px] flex flex-col items-center">
     <h1 class="text-[40px] font-semibold text-center mb-8">Upcoming Event</h1>
     {% if nextEvent %} {% for day, hours, minutes, month, dayNum in dateInfo %}
@@ -29,7 +29,7 @@ before:bg-[radial-gradient(50%_50%_at_50%_50%,_#000_0%,_rgba(0,0,0,0.3)_100%)] b
         }} {{ dayNum }}
       </p>
       {% endfor %}
-      <h2 class="text-[32px] -mt-3 mb-4">{{ nextEvent.data.title }}</h2>
+      <h2 class="text-[32px] -mt-1 mb-4 leading-7">{{ nextEvent.data.title }}</h2>
       <p>{{ nextEvent.data.summary }}</p>
     </div>
     <a
