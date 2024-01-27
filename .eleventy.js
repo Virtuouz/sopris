@@ -80,7 +80,7 @@ module.exports = (eleventyConfig) => {
   // eleventyConfig.addPassthroughCopy("./src/css/");
   eleventyConfig.addPassthroughCopy({"./src/images/favicon":"/"})
   eleventyConfig.addPassthroughCopy("./src/fonts");
-  eleventyConfig.addPassthroughCopy({ './src/robots.txt': '/robots.txt' });
+  //eleventyConfig.addPassthroughCopy({ './src/robots.txt': '/robots.txt' });
   eleventyConfig.addPassthroughCopy('./src/_redirects');
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addNunjucksShortcode("cssBackground", imageCssBackground);
