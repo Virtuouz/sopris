@@ -5,16 +5,19 @@ helpers.getDateInfo(nextEvent.data.date) %} {% if nextEvent %} {% set
 pageHeaderTitle = nextEvent.data.title %} {% set pageHeaderSummary %} {% for
 day, hours, minutes, month, dayNum in dateInfo %} {{nextEvent.data.category}} –
 {{ day }} {{ hours }}:{{ minutes }} – {{ month }} {{ dayNum }} {% endfor %} {%
-endset %} {% else %} {% set pageHeaderTitle = headline %} {% set
-pageHeaderSummary = subheadline %} {% endif %} {% include
-"partials/page-header.html" %} {%include "partials/foods-top.html" %}
-
-{% if nextEvent %}
-<article class="flex lg:flex-nowrap flex-wrap-reverse justify-around mt-20 gap-6">
+endset %} {% if nextEvent.data.backgroundImg %} {% set headerImg =
+nextEvent.data.backgroundImg%} {% else %} {% set headerImg = backgroundImg %} {% endif %} {% else %} {% set pageHeaderTitle =
+headline %} {% set pageHeaderSummary = subheadline %} {% endif %} {% include
+"partials/page-header.html" %} {%include "partials/foods-top.html" %} {% if
+nextEvent %}
+<article
+  class="mt-20 flex flex-wrap-reverse justify-around gap-6 lg:flex-nowrap"
+>
   <div class="flow-half max-w-[600px]">{{nextEvent.content | safe}}</div>
 
-  {% image nextEvent.data.img, "lg:sticky top-28 min-w-[300px]  flex-1 self-center rounded border border-white","","(max-width: 500px) 300px,
-  (max-width: 700px) 500px, (max-width: 1000px) 600px", [300,400,525]%}
+  {% image nextEvent.data.img, "lg:sticky top-28 min-w-[300px] flex-1
+  self-center rounded border border-white aspect-square","","(max-width: 500px)
+  300px, (max-width: 700px) 500px, (max-width: 1000px) 600px", [300,400,525]%}
 </article>
 
 {% endif %}
@@ -22,7 +25,9 @@ pageHeaderSummary = subheadline %} {% endif %} {% include
 <article class="mt-52">
   {% if nextEvent%}
   <div class="mb-10">
-    <h1 class="text-center text-[40px] font-semibold mb-4">{{ upcoming.headline }}</h1>
+    <h1 class="mb-4 text-center text-[40px] font-semibold">
+      {{ upcoming.headline }}
+    </h1>
     {% if nextEvents.length %}
     <p class="text-center">{{ upcoming.subheadline }}</p>
     {% else %}
@@ -30,26 +35,25 @@ pageHeaderSummary = subheadline %} {% endif %} {% include
     {% endif %}
   </div>
   {% endif %}
-  
-  <div class="flex justify-around flex-wrap gap-10 ">
+
+  <div class="flex flex-wrap justify-around gap-10">
     {% for event in nextEvents %}
-    <div class="max-w-[250px] min-w-[160px] flex-1">
-      {% image event.data.img, "min-w-[150px]  flex-1 self-center rounded border border-white","","(max-width: 500px) 300px,
-  (max-width: 700px) 500px, (max-width: 1000px) 600px", [250]%}
+    <div class="min-w-[160px] max-w-[250px] flex-1">
+      {% image event.data.img, "min-w-[150px] flex-1 self-center rounded border
+      border-white","","(max-width: 500px) 300px, (max-width: 700px) 500px,
+      (max-width: 1000px) 600px", [250]%}
       <h3 class="text-center">{{ event.data.title }}</h3>
-      {% set dateInfo = helpers.getDateInfo(event.data.date) %} {% for day, hours,
-      minutes, month, dayNum in dateInfo %}
-      <p class="text-center">
-        {{ event.data.category }}
-      </p>
+      {% set dateInfo = helpers.getDateInfo(event.data.date) %} {% for day,
+      hours, minutes, month, dayNum in dateInfo %}
+      <p class="text-center">{{ event.data.category }}</p>
       <p class="text-center">
         {{ day }} {{ hours }}:{{ minutes }} – {{ month }} {{ dayNum }}
       </p>
       {% endfor %}
     </div>
-    
+
     {% endfor %}
   </div>
 </article>
 
- {% endblock %}
+{% endblock %}

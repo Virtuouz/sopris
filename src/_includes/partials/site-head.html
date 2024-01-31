@@ -1,5 +1,6 @@
 {% set navPages = collections.all | eleventyNavigation %} {% set futureEvents =
-helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
+helpers.futureEvents(collections.events) %} {% set nextEvent =
+  helpers.getNextEvent(collections.events) %} {% macro renderNavListItem(entry)
 -%} {% if entry.title == "Blog" %} {% if collections.blog.length %}
 <li>
   <a
@@ -17,7 +18,7 @@ helpers.futureEvents(collections.events) %} {% macro renderNavListItem(entry)
 <li>
   <a
     class="data-[state=active]:link block rounded transition-colors py-2 pl-3 pr-4 uppercase text-white hover:bg-gray-700 hover:text-sopris-green dark:border-gray-700 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
-    href="{{ entry.url }}"
+    href="{{ nextEvent.url }}"
     {{
     helpers.getLinkActiveState(entry.url,
     page.url)
