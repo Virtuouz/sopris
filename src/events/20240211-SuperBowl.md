@@ -1,10 +1,17 @@
 ---
 title: "Super Bowl Party"
 summary: "Join us for an unforgettable Super Bowl Watch Party at Sopris! Enjoy the big game, delicious food, refreshing drinks, and exciting prizes. It's the perfect way to experience the Super Bowl with friends and fellow fans."
+eleventyNavigation:
+  key: "Event"
+  order: 4
 category: "Football"
 date: "2024-02-11T16:30"
 img: "src/images/event/football.png"
 backgroundImg: /images/event/super-bowl.png
+upcoming:
+  headline: "Upcoming Events"
+  subheadline: "More information on these events coming soon."
+  subheadline2: "Future Events to come!"
 ---
 ## **Sopris Super Bowl Watch Party**
 Join us at Sopris for the ultimate Super Bowl Watch Party, where the excitement on and off the field comes together for a winning combination!

@@ -2,7 +2,7 @@
 title: "New Years Monday Morning Breakfast Buffet"
 summary: "After a night of celebration at our New Year's Eve Casino Party, recharge your spirits with our Monday morning breakfast buffet from 9 am to 1 pm. Savor a hearty breakfast spread, perfect for starting your day off right."
 category: "Holiday"
-date: "2024-01-01T09:00"
+date: "2025-01-01T09:00"
 img: "src/images/event/new-year-breakfast-buffet-nevada-restaurant.png"
 ---
 ## **Monday Morning Breakfast Buffet** 
