@@ -8,7 +8,7 @@ metaDesc: "From sports watch parties and Square Games to Taco Tuesdays, discover
 isEvent: "Yes"
 layout: "layouts/event.html"
 permalink: "/event/index.html"
-backgroundImg: "/images/background/event.jpg"
+backgroundImg: "/images/event/super-bowl.png"
 headline: "More Events Soon"
 subheadline: "More Events to Come. Stay tuned!"
 upcoming:
