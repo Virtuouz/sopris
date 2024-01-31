@@ -12,11 +12,16 @@ Catch all the big game action on our big screens while enjoying a lively atmosph
 
 What's in store?
 
-* **Game-Day Vibes:** Immerse yourself in the thrill of the Super Bowl, surrounded by fellow fans, epic plays, and unforgettable moments.
-* **Delicious Food:** Satisfy your game-day cravings with a delectable menu of fan-favorite snacks and dishes, expertly crafted to elevate your Super Bowl experience.
-* **Thirst-Quenching Drinks:** Quench your thirst with a variety of beverages.
-* **Exciting Prizes:** Get in on the action with exciting jersey raffles at just $1 per ticket. Who knows, you might just score big with our fantastic prizes up for grabs!
-* **Live Music:** Groove to the rhythm of live music, adding an extra layer of excitement to the evening.
+*  **Game-Day Vibes:**  
+Immerse yourself in the thrill of the Super Bowl, surrounded by fellow fans, epic plays, and unforgettable moments.
+*  **Delicious Food:**  
+Satisfy your game-day cravings with a delectable menu of fan-favorite snacks and dishes, expertly crafted to elevate your Super Bowl experience.
+*  **Thirst-Quenching Drinks:**  
+Quench your thirst with a variety of beverages.
+*  **Exciting Prizes:**  
+Get in on the action with exciting jersey raffles at just $1 per ticket. Who knows, you might just score big with our fantastic prizes up for grabs!
+*  **Music:**  
+Groove to the rhythm of music, adding an extra layer of excitement to the evening.
 
 Whether you're here for the game, the food, the prizes, or the camaraderie, Sopris Super Bowl Watch Party is the place to be on game day. Mark your calendar, gather your friends, and join us for an unforgettable Super Bowl celebration. Let's make this game day legendary together!
 
