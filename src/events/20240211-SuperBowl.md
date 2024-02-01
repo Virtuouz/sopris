@@ -10,8 +10,8 @@ upcoming:
   subheadline: "More information on these events coming soon."
   subheadline2: "Future Events to come!"
 ---
-## **Super Bowl Watch Party Sponsored by the Four Jacks Hotel**
-Join us at Sopris for the ultimate Super Bowl Watch Party, sponsored by the Four Jacks Hotel, where the excitement on and off the field comes together for a winning combination!
+## **Super Bowl Watch Party Sponsored by the Four Jacks Hotel/Casino and Sopris Restaurant**
+Join us for the ultimate Super Bowl Watch Party, sponsored by the Four Jacks Hotel/Casino and Sopris restaurant, where the excitement on and off the field comes together for a winning combination!
 
 Catch all the big game action on our big screens while enjoying a lively atmosphere filled with cheers, drinks, and a spirited crowd. Our Super Bowl Watch Party promises an unforgettable experience for sports enthusiasts and fans alike.
 
@@ -28,5 +28,5 @@ Get in on the action with exciting jersey raffles at just $1 per ticket. Who kno
 *  **Music:**  
 Groove to the rhythm of music, adding an extra layer of excitement to the evening.
 
-Whether you're here for the game, the food, the prizes, or the camaraderie, the Super Bowl Watch Party, sponsored by the Four Jacks Hotel, is the place to be on game day. Mark your calendar, gather your friends, and join us for an unforgettable Super Bowl celebration. Let's make this game day legendary together!
+Whether you're here for the game, the food, the prizes, or the camaraderie, the Super Bowl Watch Party, sponsored by the Four Jacks Hotel/Casino and Sopris restaurant, is the place to be on game day. Mark your calendar, gather your friends, and join us for an unforgettable Super Bowl celebration. Let's make this game day legendary together!
 
