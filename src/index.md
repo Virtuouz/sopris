@@ -9,7 +9,8 @@ metaDesc: "Discover a culinary fusion at Sopris, where Mexican and American flav
 layout: "layouts/home.html"
 heroImg: "/images/background/Sopris-Hero.jpg"
 hero:
-  headline: "Mexican or American Cuisine?\nExplore Both at"
+  headline1: "Mexican or American Cuisine?"
+  headline2: "Explore Both at"
   restaurant: "Sopris!"
   subheadline: "Sopris is a Jackpot Nevada Restaurant where Our Menu is Your Playground: Tacos, Burgers, and More the "
   subheadbold: "Sopris Way"
