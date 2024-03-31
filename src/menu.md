@@ -14,6 +14,6 @@ mainMenu:
     headline: "What Are You Craving?"
 specialMenu:
 # Looking for an Experience?
-    headline: "Weekly Dinners Coming Soon!"
-    subheadline: "Take a look at our weekly Dinners Coming Soon!"
+    headline: "Looking for an Experience?"
+    subheadline: "Take a look at our weekly Dinners!"
 ---

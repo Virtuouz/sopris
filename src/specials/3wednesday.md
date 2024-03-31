@@ -1,7 +1,7 @@
 ---
 title: "Surf and Turf Wednesday"
 summary: "Elevate your midweek dining experience at Sopris with Surf and Turf Wednesday, a culinary delight featuring a 10oz sirloin steak, golden-fried breaded shrimp, and a loaded potato."
-day: 3
+day: -1
 img: "src/images/special/Surf-and-Turf.png"
 description: ""
 ---

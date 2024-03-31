@@ -1,7 +1,7 @@
 ---
 title: "Sopris Barbecue Night"
 summary: "Indulge in a smoky symphony of flavors every Thursday with Sopris Barbecue Night, featuring a variety of barbecue options like spare ribs and kabana sausages."
-day: 4
+day: -1
 img: "src/images/special/Barbecue.png"
 description: ""
 ---
