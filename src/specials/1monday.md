@@ -1,7 +1,7 @@
 ---
 title: "Pasta Monday"
 summary: "Make Mondays memorable at Sopris with Pasta Monday, an exclusive dining experience featuring pasta creations not found on our regular menu, accompanied by the perfect wine pairing available only on Mondays."
-day: 1
+day: -1
 img: "src/images/special/Pasta-Monday.png"
 description: ""
 ---
