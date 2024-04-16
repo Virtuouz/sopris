@@ -2,7 +2,7 @@
 title: "Sopris Partners with La Michoacana!"
 summary: "Get ready for a delicious addition to your dining experience at Sopris! We're thrilled to announce our partnership with La Michoacana, bringing authentic Mexican ice cream to our menu soon. Stay tuned for updates!"
 category: "Ice cream"
-date: "2024-04-17T17:00"
+date: "2024-04-19T17:00"
 backgroundImg: /images/event/michoacana.jpg
 img: "src/images/event/ice-cream.png"
 ---
