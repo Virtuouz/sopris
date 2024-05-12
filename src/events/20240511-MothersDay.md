@@ -1,7 +1,7 @@
 ---
 title: "Mothers Day Dinner"
 summary: "Celebrate Mom in style at Sopris this Mother's Day! Join us for a special dinner featuring prime rib, crab legs, and alfredo pasta. Plus, all mothers receive a 20% discount on their meals. Treat Mom to a memorable evening from 5pm to 9pm."
-category: "Snacks"
+category: "Event"
 date: "2024-05-12T17:00"
 backgroundImg: /images/event/mothers.jpg
 img: "src/images/event/mothersDinner.jpg"
