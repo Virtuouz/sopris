@@ -1,6 +1,6 @@
 ---
 title: "Mothers Day Dinner"
-summary: "Join us on 4/20 for a special celebration featuring a mouthwatering selection of food and snacks. Whether you're a seasoned enthusiast or simply craving some delicious comfort food, our 420 Munchies event promises to satisfy your cravings"
+summary: "Celebrate Mom in style at Sopris this Mother's Day! Join us for a special dinner featuring prime rib, crab legs, and alfredo pasta. Plus, all mothers receive a 20% discount on their meals. Treat Mom to a memorable evening from 5pm to 9pm."
 category: "Snacks"
 date: "2024-05-12T17:00"
 backgroundImg: /images/event/mothers.jpg
