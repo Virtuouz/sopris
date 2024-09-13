@@ -1,6 +1,6 @@
 ---
 title: "Large - Pepperoni"
-price: "$16.00"
+price: "$17.00"
 category: "Pizza"
 img: ""
 desc: ""

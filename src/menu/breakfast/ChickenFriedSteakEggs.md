@@ -1,6 +1,6 @@
 ---
 title: "Chicken Fried Steak and Eggs"
-price: "$13.00"
+price: "$14.00"
 category: "Breakfast"
 img: ""
 desc: "Chicken fried steak smothered in country gravy served with hash browns and two eggs any style"
