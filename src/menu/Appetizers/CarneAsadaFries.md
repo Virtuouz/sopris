@@ -1,7 +1,7 @@
 ---
 title: "Carne Asada Fries"
-price: "$13.00"
+price: "$14.00"
 category: "Appetizers"
 img: "src/images/menu/Carne-Asada-Fries.jpg"
-desc: "French fries topped with carne asada, melted cheese, pico de gallo guacamole, sour cream and jalapenos"
+desc: "choose from asada ,adobada, al pastor or chicken. French fries topped with cheese sause pico de gallo,jalapenos guacamole and sour cream"
 ---
