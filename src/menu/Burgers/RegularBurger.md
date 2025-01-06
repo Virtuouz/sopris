@@ -1,5 +1,5 @@
 ---
-title: "Regular Burger"
+title: "Straight up Burger"
 price: "$10.00"
 category: "Burgers"
 img: "src/images/menu/Regular-Burger.jpg"
