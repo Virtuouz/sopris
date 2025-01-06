@@ -1,7 +1,7 @@
 ---
 title: "Large - Sausage"
-price: "$16.00"
-category: "Pizza"
+price: "$18.00"
+category: "Pizza-and-Pasta"
 img: ""
 desc: ""
 ---
