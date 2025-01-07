@@ -1,5 +1,5 @@
 ---
-title: "Fish Sandwich   "
+title: "Fish Sandwich"
 price: "$14.00"
 category: "Sandwiches"
 img: ""
