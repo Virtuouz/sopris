@@ -1,7 +1,7 @@
 ---
 title: "Street Tacos"
-price: "$3.00 per taco"
+price: "$3.00 ·—· $3.25 per taco"
 category: "Mexican-Cuisine"
 img: "src/images/menu/Street-Tacos.jpg"
-desc: "Asada, Adobada, Chicken, Al Pastor, Lengua, and Carnitas. Street Tacos are topped with cilantro and onion"
+desc: "Carne Asada, Adobada, Al Pastor, Pollo, Alambre, Carnitas, and Lengua. Street Tacos are topped with cilantro and onion"
 ---

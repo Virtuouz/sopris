@@ -4,7 +4,6 @@ headline %} {% set pageHeaderSummary = subheadline %} {% include
 helpers.getMenuCategories(collections.menu) %} {% set SpecialDays =
 helpers.getSpecialDays(collections.specials) %} {%include
 "partials/foods-top.html" %}
-
 <article
   class="waiting"
   _="
@@ -78,6 +77,9 @@ if $isFocused is 0 add .link  to first <button/> in me"
   {% endfor %} {% endif %}
 </article>
 
+{# SPECIALS#}
+
+{# 
 <article
   _="
 on loaded 
@@ -146,6 +148,7 @@ if $isFocusedSpecial is 0 add .link to first <button/> in me"
   </div>
   {% endfor %} {% endif %}
 </article>
+#}
 <script defer type="text/hyperscript">
   {# After page load check t  #}
   on load if $isFocused is not 1 set  $isFocused to 0 send loaded to .waiting end
@@ -155,7 +158,7 @@ if $isFocusedSpecial is 0 add .link to first <button/> in me"
 <script>
   function removeDash(category) {
     console.log(category);
-    return category.replace("-", " ");
+    return category.replaceAll("-", " ");
   }
 </script>
 

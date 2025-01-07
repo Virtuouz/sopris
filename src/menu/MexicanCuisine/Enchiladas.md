@@ -3,5 +3,5 @@ title: "Enchiladas"
 price: "$15.00"
 category: "Mexican-Cuisine"
 img: "src/images/menu/Enchiladas.jpeg"
-desc: "Three wrapped enchiladas with your choice of shreded chicken or beef garnished with guacamole and sour cream"
+desc: "Chicken or beef smothered with homemade, red or green enchilada sauce, topped with guacamole and sour cream"
 ---

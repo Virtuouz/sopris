@@ -1,5 +1,5 @@
 ---
-title: "Mushroom Bacon Burger"
+title: "Mushroom Bacon Swiss Burger"
 price: "$13.00"
 category: "Burgers"
 img: "src/images/menu/Mushroom-Bacon-Burger.jpg"

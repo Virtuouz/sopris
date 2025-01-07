@@ -165,7 +165,7 @@ module.exports = {
       CATEGORIES.push(collection[counter].data.category);
       counter--;
     }
-    return [...new Set(CATEGORIES)];
+    return [...new Set(CATEGORIES)].sort();
   },
   getSpecialDays(collection) {
     const weekday = [

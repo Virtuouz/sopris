@@ -3,5 +3,5 @@ title: "Carne Asada"
 price: "$18.00"
 category: "Mexican-Cuisine"
 img: "src/images/menu/Carne-Asada.jpeg"
-desc: "Marinated skirt steak chard-broiled full of flavor. Garnished with guacamole, sour cream, and a side of corn tortillas"
+desc: "Grilled marinated steak served with rice and beans, garnished with guacamole and sour cream"
 ---
