@@ -102,7 +102,7 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addCollection("menu", (collection) => {
-    return collection.getFilteredByGlob("./src/menu/*/*.md");
+    return collection.getFilteredByGlob("./src/menu/*/*.md").sort((a, b) => a.data.title.localeCompare(b.data.title));
   });
 
   eleventyConfig.addFilter("dateFilter", dateFilter);
