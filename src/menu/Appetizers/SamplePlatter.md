@@ -1,5 +1,5 @@
 ---
-title: "sample Platter"
+title: "Sample Platter"
 price: "$14.00"
 category: "Appetizers"
 img: ""
