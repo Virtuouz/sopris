@@ -3,8 +3,7 @@ helpers.getNextEvent(collections.events) %} {% set nextEvents =
 helpers.getNextEvents(collections.events) %} {% set dateInfo =
 helpers.getDateInfo(nextEvent.data.date) %} {% if nextEvent %} {% set
 pageHeaderTitle = nextEvent.data.title %} {% set pageHeaderSummary %} {% for
-day, hours, minutes, month, dayNum in dateInfo %} {{nextEvent.data.category}} –
-{{ day }} {{ hours }}:{{ minutes }} – {{ month }} {{ dayNum }} {% endfor %} {%
+day, hours, minutes, month, dayNum in dateInfo %} {{nextEvent.data.category}} {% if nextEvent.data.category != "Announcement" %} – {{ day }} {{ hours }}:{{ minutes }} – {{ month }} {{ dayNum }}{% endif %}{% endfor %} {%
 endset %} {% if nextEvent.data.backgroundImg %} {% set headerImg =
 nextEvent.data.backgroundImg%} {% else %} {% set headerImg = backgroundImg %} {% endif %} {% else %} {% set pageHeaderTitle =
 headline %} {% set pageHeaderSummary = subheadline %} {% endif %} {% include
