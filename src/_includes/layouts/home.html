@@ -21,7 +21,7 @@ before:bg-[radial-gradient(50%_50%_at_50%_50%,_#000_0%,_rgba(0,0,0,0.3)_100%)] b
 
 <article class="flex justify-center items-center {% if nextEvent %} h-[500px] {% else %} h-[160px] {% endif %} mt-8">
   <div class="max-w-[550px] flex flex-col items-center">
-    <h1 class="text-[40px] font-semibold text-center mb-8">Upcoming {% if nextEvent.data.category == "Announcement" %}Announcement {% else %} Event {% endif %}</h1>
+    <h1 class="text-[40px] font-semibold text-center mb-8">{% if nextEvent.data.category == "Announcement" %}Announcement {% else %}Upcoming Event {% endif %}</h1>
     {% if nextEvent %} {% for day, hours, minutes, month, dayNum in dateInfo %}
     <div>
       <p class="font-bold uppercase text-sopris-green text-xs">
