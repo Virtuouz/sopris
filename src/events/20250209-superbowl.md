@@ -2,7 +2,7 @@
 title: "Sopris Super Bowl Watch Party – Eagles vs. Chiefs"
 summary: "Join us at Sopris and Four Jacks Hotel Casino for an electrifying Super Bowl LIX Watch Party as the Eagles and Chiefs battle for the championship!"
 category: "Football"
-date: "2025-02-09T16:30"
+date: "2025-02-09T19:00"
 backgroundImg: /images/event/super-bowl-2025.jpg
 img: "src/images/event/super-bowl-2025.jpg"
 ---
