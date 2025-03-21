@@ -1,6 +1,6 @@
 ---
 title: "Sopris Wild Wednesday Buffet"
-summary: "Whether you're a fan of smoky barbecue, zesty wings, or hearty comfort foods, Wild Wednesday is bringing you the best of everything—all in one epic buffet."
+summary: "Get ready for an incredible feast at Sopris Restaurant with our Wild Wednesday Dinner Buffet – a one-time-only special you don’t want to miss!"
 category: "Buffet"
 date: "2025-03-26T17:00"
 backgroundImg: /images/event/Wild-Wednesday-Sopris.jpg
