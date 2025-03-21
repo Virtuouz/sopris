@@ -1,6 +1,6 @@
 ---
 title: "Sopris Wild Wednesday Buffet"
-summary: "Celebrate love with a Steak and Lobster Special for just $45, complemented by our fresh salad bar."
+summary: "Whether you're a fan of smoky barbecue, zesty wings, or hearty comfort foods, Wild Wednesday is bringing you the best of everything—all in one epic buffet."
 category: "Buffet"
 date: "2025-03-26T17:00"
 backgroundImg: /images/event/wild-Buffett.jpg
