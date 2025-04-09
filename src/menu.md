@@ -15,5 +15,5 @@ mainMenu:
 specialMenu:
 # Looking for an Experience?
     headline: "Looking for an Experience?"
-    subheadline: "Take a look at our weekly Dinners!"
+    subheadline: "See whats happening at Sopris!"
 ---

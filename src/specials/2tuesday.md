@@ -1,7 +1,7 @@
 ---
 title: "Taco Tuesday"
 summary: "Spice up your Tuesdays at Sopris with Taco Tuesday, where we offer an expanded variety of tacos and Mexican cuisines, including mouthwatering options like the Chile Verde Burrito."
-day: 2
+day: -1
 img: "src/images/special/Taco-Tuesday.png"
 description: ""
 ---
