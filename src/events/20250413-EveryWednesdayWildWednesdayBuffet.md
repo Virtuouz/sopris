@@ -3,8 +3,8 @@ title: "Every Wednesday - Sopris Wild Wednesday Buffet "
 summary: "Get ready for an incredible feast at Sopris Restaurant with our Wild Wednesday Dinner Buffet "
 category: "Announcement"
 date: "2025-04-13T17:00"
-backgroundImg: /images/event/every-wednesday-buffet.jpg
-img: "src/images/event/every-wednesday-buffet.jpg"
+backgroundImg: /images/event/sopris-april.jpg
+img: "src/images/event/sopris-april.jpg"
 ---
 ## **Get Ready for Wild Wednesday at Sopris!**
 
