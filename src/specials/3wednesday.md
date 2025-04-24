@@ -1,7 +1,7 @@
 ---
 title: "Sopris Wild Wednesday Buffet"
 summary: "Get ready for an incredible feast at Sopris Restaurant with our Wild Wednesday Dinner Buffet"
-day: 3
+day: -1
 img: "src/images/special/Barbecue.png"
 description: ""
 ---

@@ -79,7 +79,7 @@ if $isFocused is 0 add .link  to first <button/> in me"
 
 {# SPECIALS#}
 
-
+{# 
 <article
   _="
 on loaded 
@@ -148,7 +148,7 @@ if $isFocusedSpecial is 0 add .link to first <button/> in me"
   </div>
   {% endfor %} {% endif %}
 </article>
-
+#}
 <script defer type="text/hyperscript">
   {# After page load check t  #}
   on load if $isFocused is not 1 set  $isFocused to 0 send loaded to .waiting end
