@@ -1,6 +1,6 @@
 ---
-title: "Sausage Gravy and Biscuits - Half Order"
-price: "$6.00"
+title: "Biscuits and Gravy - Half Order"
+price: "$8.00"
 category: "Breakfast"
 img: ""
 desc: "One bisuit and sausage gravy"

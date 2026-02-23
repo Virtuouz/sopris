@@ -1,7 +1,7 @@
 ---
-title: "Hand - Breaded Chicken Tenders"
-price: "$12.00"
+title: "Chicken Tenders"
+price: "$13.00"
 category: "Appetizers"
 img: "src/images/menu/Chicken-Tenders.jpg"
-desc: "Served with french fries and a side of ranch dressing"
+desc: "Served with fries and ranch dressing"
 ---

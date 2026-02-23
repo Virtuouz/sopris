@@ -1,7 +1,7 @@
 ---
 title: "New York Steak"
-price: "$22.00"
+price: "$27.00"
 category: "Dinner"
 img: "src/images/menu/New-York-Steak.png"
-desc: "Generous 12oz. Cut tender, and flavorfully cooked to perfection"
+desc: "Generous 12 oz cut, tender and flavorful cooked to perfection"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Chimichanga"
-price: "$15.00"
+price: "$16.00"
 category: "Mexican-Cuisine"
 img: ""
-desc: "A large flour tortilla filled with either shredded beef or chicken deep fried topped with enchilada sauce and melted cheese"
+desc: "Deep fried chimichanga filled with beef, chicken or pork topped with enchilada sauce and melted cheese"
 ---
