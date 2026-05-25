@@ -1,7 +1,7 @@
 ---
-title: "Healthy Chicken Dinner"
-price: "$15.00"
+title: "Healthy Style Grilled Chicken"
+price: "$16.00"
 category: "Dinner"
 img: ""
-desc: "Grilled chicken breast topped with mushrooms, Swiss cheese. Served with rice pilaf and vegetables"
+desc: "Tender grilled chicken breast topped with mushrooms and Swiss cheese"
 ---

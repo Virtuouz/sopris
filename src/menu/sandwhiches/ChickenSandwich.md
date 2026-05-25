@@ -1,7 +1,7 @@
 ---
-title: "Chicken Sandwich"
-price: "$13.00"
+title: "Chicken Avocado Sandwich"
+price: "$14.00"
 category: "Sandwiches"
 img: ""
-desc: "Crispy chicken on a toasted brioche with lettuce, tomato, bacon and cheddar cheese"
+desc: "Grilled or crispy chicken on a brioche bun with lettuce, tomato, bacon, avocado and cheddar cheese"
 ---

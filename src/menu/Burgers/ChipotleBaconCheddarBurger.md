@@ -1,7 +1,7 @@
 ---
 title: "Chipotle Bacon Avocado Burger"
-price: "$15.00"
+price: "$16.00"
 category: "Burgers"
 img: ""
-desc: "8oz ground beef patty with our house made creamy chipotle mayonnaise, on a toasted brioche bun topped with cheddar cheese, bacon and avocado"
+desc: "Burger patty with our house made creamy chipotle mayonnaise, on a toasted brioche bun topped with cheddar cheese, bacon and avocado"
 ---

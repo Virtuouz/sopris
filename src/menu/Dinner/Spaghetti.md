@@ -1,7 +1,7 @@
 ---
-title: "Spaghetti"
-price: "$13.00"
+title: "Spaghetti Dinner"
+price: "$14.00"
 category: "Dinner"
 img: ""
-desc: "Spaghetti tossed in homemade spaghetti meat sauce served with garlic bread"
+desc: "Al dente pasta tossed in a rich homemade marinara meat sauce served with warm garlic bread"
 ---

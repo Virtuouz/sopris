@@ -1,7 +1,7 @@
 ---
-title: "Hot Pastrami"
+title: "Pastrami Sandwich"
 price: "$16.00"
 category: "Sandwiches"
 img: ""
-desc: "Grilled pastrami, melted cheese, mayo and mustard on rye bread"
+desc: "Grilled pastrami, melted Swiss cheese and mustard on rye bread"
 ---
