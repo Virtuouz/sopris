@@ -1,7 +1,7 @@
 ---
 title: "Jalapeno Bacon Burger"
-price: "$13.00"
+price: "$15.00"
 category: "Burgers"
 img: ""
-desc: "Sauteéd onion, jalapenos, bacon and cheddar cheese"
+desc: "Sautéed onion, jalapenos, bacon and cheddar cheese"
 ---

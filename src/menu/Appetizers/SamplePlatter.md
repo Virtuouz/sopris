@@ -1,7 +1,7 @@
 ---
-title: "Sample Platter"
-price: "$14.00"
+title: "Sampler Platter"
+price: "$16.00"
 category: "Appetizers"
 img: ""
-desc: "Chicken strip, finger steaks, onion rings, tatertos;boneless wings"
+desc: "Chicken strip, finger steaks, onion rings, tater tots, boneless wings"
 ---

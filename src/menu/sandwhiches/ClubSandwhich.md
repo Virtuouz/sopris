@@ -1,7 +1,7 @@
 ---
 title: "Club Sandwich"
-price: "$14.00"
+price: "$16.00"
 category: "Sandwiches"
 img: "src/images/menu/Club-Sandwich.jpg"
-desc: "Triple decker turkey, bacon, lettuce,and tomato. Served on white bread"
+desc: "Turkey, bacon, ham, cheese, lettuce, and tomato served on white toasted bread"
 ---

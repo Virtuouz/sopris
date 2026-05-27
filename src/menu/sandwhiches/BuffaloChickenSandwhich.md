@@ -1,7 +1,7 @@
 ---
-title: "Buffalo Chicken Sandwhich"
+title: "Buffalo Chicken Sandwich"
 price: "$14.00"
 category: "Sandwiches"
 img: ""
-desc: "Boneless chicken breast dipped in buffalo sauce and ranch dressing served on a bun"
+desc: "Crispy chicken breast coated in spicy buffalo sauce and ranch dressing with lettuce, tomato and pickles on a toasted bun"
 ---

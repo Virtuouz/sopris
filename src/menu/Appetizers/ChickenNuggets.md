@@ -1,7 +1,7 @@
 ---
-title: "chicken nuggets "
-price: "$8.00 ·—· $10.00"
+title: "Chicken Nuggets"
+price: "$11.00 ·—· $13.00"
 category: "Appetizers"
 img: ""
-desc: "served with french fries- Pick 12 pc or 16 pc"
+desc: "Served with fries - 12 PC $11.00 / 16 PC $13.00"
 ---
