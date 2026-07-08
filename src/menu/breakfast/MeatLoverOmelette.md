@@ -1,7 +1,7 @@
 ---
-title: "Meat Lover Omelette "
-price: "$14.00"
+title: "Meat Lovers Omelette"
+price: "$15.00"
 category: "Breakfast"
 img: ""
-desc: "Bacon, Ham, and Sausage"
+desc: "Bacon, ham and sausage"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Surf and Turf"
-price: "$25.00"
+price: "$32.00"
 category: "Dinner"
 img: "src/images/menu/Surf-and-Turf.png"
-desc: "Steak and shrimp 12oz top sirloin tender and flavorful with sautéed shrimp"
+desc: "12 oz New York steak tender and flavorful, with sautéed shrimp"
 ---

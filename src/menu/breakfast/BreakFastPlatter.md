@@ -1,7 +1,7 @@
 ---
 title: "Breakfast Platter"
-price: "$12.00"
+price: "$13.00"
 category: "Breakfast"
 img: "src/images/menu/Breakfast-Platter.png"
-desc: "Three eggs any style served with hash browns with your choice of bacon, links or sausage patty"
+desc: "Three eggs served with your choice of bacon, links, ham or sausage patties"
 ---

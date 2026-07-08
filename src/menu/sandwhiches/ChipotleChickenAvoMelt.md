@@ -1,7 +1,7 @@
 ---
-title: "chipotle Chicken Avo Melt "
-price: "$14.00"
+title: "Chipotle Chicken Avo Melt"
+price: "$15.00"
 category: "Sandwiches"
 img: ""
-desc: "Toasted Sourdough bread is layered with zesty chipotle mayo, avocado slices, crispy chicken, bacon and cheddar cheese"
+desc: "Toasted sourdough bread is layered with zesty chipotle mayo, avocado slices, crispy chicken, bacon and cheddar cheese"
 ---

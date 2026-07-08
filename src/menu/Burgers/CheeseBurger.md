@@ -1,6 +1,6 @@
 ---
 title: "Cheese Burger"
-price: "$11.00"
+price: "$13.00"
 category: "Burgers"
 img: ""
 desc: ""

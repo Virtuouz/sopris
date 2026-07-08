@@ -1,7 +1,7 @@
 ---
 title: "House Nachos"
-price: "$13.00"
+price: "$14.00"
 category: "Appetizers"
 img: ""
-desc: "Crisy tortilla chips covered with cheese sauce taco meat and garnished with pico de gallo guacamole and sour cream"
+desc: "Asada, adobada, al pastor or chicken ($2.00). Loaded with taco meat, nacho cheese, lettuce, tomatoes, onions and jalapenos topped with guacamole and sour cream"
 ---

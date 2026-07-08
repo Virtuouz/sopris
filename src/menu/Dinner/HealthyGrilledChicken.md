@@ -1,7 +1,7 @@
 ---
-title: "Healthy Grilled Chicken"
-price: "$15.00"
+title: "Healthy Style Grilled Chicken"
+price: "$16.00"
 category: "Dinner"
 img: ""
-desc: "Tender grilled chicken breast topped with sauteed mushrooms and melted swiss cheese"
+desc: "Tender grilled chicken breast topped with mushrooms and Swiss cheese"
 ---

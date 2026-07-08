@@ -1,7 +1,7 @@
 ---
 title: "Ultimate Breakfast Skillet"
-price: "$14.00"
+price: "$16.00"
 category: "Breakfast"
 img: ""
-desc: "Home fried potatoes, bacon, green onion, tomatoes, green chilies, cheese with three eggs any style"
+desc: "Home fried potatoes, bacon, onion, tomatoes, green peppers, cheese with three eggs any style"
 ---
