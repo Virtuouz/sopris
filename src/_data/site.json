@@ -3,5 +3,6 @@
     "legalName": "Sopris",
     "url": "https://sopriscuisine.com",
     "authorName":"Sopris",
-    "authorEmail": "info@sopriscuisine.com"
+    "authorEmail": "info@sopriscuisine.com",
+    "onlineOrderUrl": "https://order.menudrive.com/sopris"
 }

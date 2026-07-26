@@ -11,9 +11,26 @@ on loaded
 log $isFocused
 if $isFocused is 0 add .link  to first <button/> in me"
 >
-  <h2 class="mb-12 mt-24 text-center text-[40px] font-semibold">
+  <h2 class="mb-4 mt-24 text-center text-[40px] font-semibold">
     {{ mainMenu.headline }}
   </h2>
+  <p class="mx-auto mb-6 max-w-lg text-center text-lg">
+    Stop by or order online — your Sopris favorites are just a few clicks away.
+  </p>
+  <div class="mb-12 flex flex-wrap items-center justify-center gap-4">
+    <a
+      href="{{ site.onlineOrderUrl }}"
+      target="_blank"
+      rel="noopener"
+      class="h-min max-w-max rounded bg-sopris-mutedgreen px-4 py-2 text-center text-sm font-medium uppercase text-white transition-colors hover:bg-lime-600 focus:outline-none focus:ring-4 focus:ring-blue-300 md:text-base"
+      >Order Online</a
+    >
+    <a
+      href="/location"
+      class="h-min max-w-max rounded border border-sopris-mutedgreen bg-transparent px-4 py-2 text-center text-sm font-medium uppercase text-white transition-colors hover:bg-sopris-mutedgreen focus:outline-none focus:ring-4 focus:ring-blue-300 md:text-base"
+      >Find Us</a
+    >
+  </div>
   {% if categories %}
   <div class="mb-10 flex justify-center border-b border-t border-white/40 py-6">
     <div class="relative m-[1em] max-w-3xl overflow-hidden">
